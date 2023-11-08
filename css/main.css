@@ -13,7 +13,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Poppins';
-	background-color: black;
+	background: black;
 }
 
 ul {
@@ -28,11 +28,11 @@ a {
 	background-color: #ffff0a;
 }
 header {
-	background-image: linear-gradient(rgba(0, 0, 0, 0.735), rgb(0, 0, 0)),
-		url(../img/peliculas/pelicula_destacada.png);
+	background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 9)),
+		url(../img/pelicula_destacada3.jpg);
 	background-size: cover;
 	background-position: 50%;
-	height: 90vh;
+	height: 91vh;
 }
 
 .navigation {
@@ -121,7 +121,7 @@ header {
 	}
 }
 
-/* media query fold */
+/* media query fold iphone12 */
 @media (max-width: 280px) {
 	.logo {
 		font-size: 1rem !important;
@@ -130,12 +130,46 @@ header {
 	.search-box input {
 		width: 60%;
 	}
+
+	#slider-principal .estrenos {
+		margin-top: 40px !important;
+		font-size: 2rem !important;
+		font-weight: 200;
+		font-family: Monoton;
+		color: #ffe940;
+		text-shadow: 18px -12px 16px rgba(243, 212, 8, 0.738);
+		text-transform: uppercase;
+		position: relative;
+	}
+
+	/* cavecera */
+	.cavecera {
+		margin-top: 100px !important;
+		margin-bottom: 0px;
+		padding-left: 30px;
+	}
+	.cavecera-titulo {
+		font-size: 2rem !important;
+		font-weight: 600 !important;
+	}
+
+	.cavecera-parrafo1 {
+		font-size: 1rem !important;
+		font-weight: 400;
+	}
+
+	.cavecera-parrafo2 {
+		font-size: 0.8rem !important;
+		font-weight: 200;
+		line-height: 1rem;
+	}
 }
 
 /* logo */
 .logo {
 	color: #ffe940;
-  text-shadow: 10px -8px 17px rgba(243, 212, 8, 0.738);
+	text-shadow: 10px -8px 17px rgba(243, 212, 8, 0.738);
+
 	text-transform: uppercase;
 	font-size: 2rem !important;
 	font-weight: 400;
@@ -202,4 +236,26 @@ header {
 .red-btn:hover {
 	background: #ffe940;
 	color: black;
+}
+
+/* cavecera */
+.cavecera {
+	margin-top: 250px;
+	margin-bottom: 0px;
+	padding-left: 30px;
+}
+.cavecera-titulo {
+	font-size: 2rem;
+	font-weight: 900;
+}
+
+.cavecera-parrafo1 {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.cavecera-parrafo2 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	line-height: 1.875rem;
 }
