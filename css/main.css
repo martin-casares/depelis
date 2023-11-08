@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Poppins';
+	background-color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+::selection {
+	background-color: #ffff0a;
+}
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.735), rgb(0, 0, 0)),
+		url(../img/peliculas/pelicula_destacada.png);
+	background-size: cover;
+	background-position: 50%;
+	height: 90vh;
+}
+
+.navigation {
+	padding: 20px 0px;
+	max-width: 1400px;
+	margin: 0;
+	width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link {
+	font-size: 16px;
+	color: white;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: #ffe940;
+}
+.menumi {
+	margin-right: 0px;
+}
+.menumi ul {
+	margin-left: 160px;
+}
+
+.menumi li a {
+	/* 	margin: 30px; */
+	font-size: 1rem;
+	font-weight: 800;
+	transition: all ease 0.3s;
+}
+/* media query para el menu */
+@media (max-width: 991px) {
+	.sidebar {
+		background-color: #11111198;
+		backdrop-filter: blur(10px);
+		font-family: Poppins;
+		/* menu */
+		.menumi {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			animation: fade 0.3s;
+		}
+
+		.menumi ul {
+			margin-left: 0px;
+		}
+
+		.menumi li a {
+			margin: 30px;
+			font-size: 3rem;
+			font-family: Monoton;
+			transition: all ease 0.3s;
+		}
+
+		.menumi li a:hover {
+			font-size: 1.3rem;
+			color: #ffe940;
+			transition: all ease 0.3s;
+		}
+		.menumi .content-btn {
+			width: 100%;
+		}
+		.menumi .red-btn {
+			margin: 15px 0px 15px;
+			background-color: transparent;
+			border: 1px solid #ffe940;
+			border-radius: 20px;
+			width: 77%;
+		}
+		.menumi .red-btn:hover {
+			background-color: #ffe940;
+		}
+		.logo {
+			font-size: 1.4rem;
+			margin: auto;
+		}
+		.search-box {
+			width: 80%;
+			margin: auto;
+		}
+	}
+}
+
+/* media query fold */
+@media (max-width: 280px) {
+	.logo {
+		font-size: 1rem !important;
+		margin: 0px auto 0px 1px !important;
+	}
+	.search-box input {
+		width: 60%;
+	}
+}
+
+/* logo */
+.logo {
+	color: #ffe940;
+  text-shadow: 10px -8px 17px rgba(243, 212, 8, 0.738);
+	text-transform: uppercase;
+	font-size: 2rem !important;
+	font-weight: 400;
+	font-family: 'Monoton', sans-serif;
+	margin: 0px auto 0px 30px !important;
+
+	display: flex;
+	align-items: center;
+	letter-spacing: 1px;
+}
+.logo:hover {
+	color: #ffe940;
+}
+.logo span {
+	font-size: 2.3rem;
+	margin: 0px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: red;
+}
+
+/* search-box */
+.div-search {
+	margin-right: 0px;
+}
+.search-box {
+	background-color: #d1d1d111;
+	padding: 3px 32px;
+	border-radius: 20px;
+	height: 40px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 5px;
+	width: 70%;
+}
+.search-box input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	color: #ffffff;
+	width: 80%;
+}
+.search-box input::placeholder {
+	color: #ffffff5e;
+}
+.search-box button {
+	background-color: transparent;
+	color: #ffffffc9;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.red-btn {
+	font-size: 0.8rem;
+	background-color: transparent;
+	color: #fff;
+	border: 1px solid #ffe940;
+	border-radius: 5rem;
+	padding: 5px 17px;
+}
+
+.red-btn:hover {
+	background: #ffe940;
+	color: black;
+}
