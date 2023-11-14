@@ -215,7 +215,7 @@ function cargarPeliculas(peliculas) {
 cargarPeliculas(estrenos);
 
 // cargar slider secundarios
-function cargar2slider(peliculas) {
+function cargarSliders(peliculas) {
 	let cardContainers = document.querySelectorAll('.card-container');
 	console.log(cardContainers);
 
@@ -233,10 +233,10 @@ function cargar2slider(peliculas) {
 	});
 }
 
-cargar2slider(peliculas);
+cargarSliders(peliculas);
 
 function scrollIzquierda() {
-	console.log(scroll);
+	console.log();
 	cardContainer.scrollLeft -= 235;
 }
 
