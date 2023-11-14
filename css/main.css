@@ -340,7 +340,7 @@ header {
 
 .main-slider-img {
 	width: 100%;
-	height: 100%;
+	height: 130%;
 }
 .main-slider-img img {
 	width: 100%;
@@ -350,8 +350,7 @@ header {
 }
 
 .swiper-button-next,
-.swiper-button-prev
- {
+.swiper-button-prev {
 	position: static !important;
 	transform: translate(0, 0);
 	margin: 10px 0px 0px 20px !important;
@@ -370,8 +369,6 @@ header {
 	font-weight: 800;
 	color: #ffffff;
 }
-
-
 
 /* categorias */
 .categorias {
@@ -443,7 +440,7 @@ header {
 	opacity: 0.6;
 	padding-left: 4%;
 	text-transform: capitalize;
-	font-size: 33px;
+	font-size: 28px;
 	font-weight: 600;
 }
 .lista-peliculas {
@@ -556,29 +553,27 @@ header {
 	width: 5%;
 	height: 100%;
 	z-index: 2;
-	 border: none; 
+	border: none;
 }
 
 .pre-btn {
-	left: 0;
-	background: linear-gradient(to right, #3c3b3b00 0%, #c5c5c500);
+	left: 5px;
+	/* background: linear-gradient(to right, #4d4949b0 0%, #c5c5c500); */
 }
 
 .nxt-btn {
-	right: 0;
-	background: linear-gradient(to left, #4f4e4e00 0%, #3c3b3b00);
+	right: 15px;
+	/* background: linear-gradient(to left, #e259598d 0%, #3c3b3b00); */
 }
 
 .pre-btn img,
 .nxt-btn img {
 	margin-top: 90px;
+	margin-right: 0px;
 	width: 20px;
 	height: 30px;
-	
-
 }
-.pre-btn:hover img,
+/* .pre-btn:hover img,
 .nxt-btn:hover img {
-	/*  opacity: 0;  */
-	color: #ffff0a;
-} 
+}
+ */

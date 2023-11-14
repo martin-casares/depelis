@@ -28,7 +28,7 @@
 		<title>De.Pelis</title>
 	</head>
 	<body>
-		<header class="position-relative">
+		<header class="position-relative justify-content-center">
 			<!-- navbar -->
 			<nav class="navbar navbar-expand-lg navigation">
 				<div
@@ -152,18 +152,22 @@
 						<div class="pre-btn" id="boton-izq" onclick="scrollIzquierda()">
 							<img src="img/pre.png" alt="" />
 						</div>
-						<div class="nxt-btn" id="boton-izq" onclick="scrollIzquierda()">
+						<div class="nxt-btn" id="boton-nxt" onclick="scrollDerecha()">
 							<img src="img/nxt.png" alt="" />
 						</div>
 					</div>
 				</div>
 
-				<h1 class="titulo">Recomendados</h1>
+				<h1 class="titulo">Cine de Terror</h1>
 				<div class="lista-peliculas">
 					<div class="card-container"></div>
 					<div class="slider-botones">
-						<div class="prev"></div>
-						<div class="next"></div>
+						<div class="pre-btn" id="boton-izq" onclick="scrollIzquierda()">
+							<img src="img/pre.png" alt="" />
+						</div>
+						<div class="nxt-btn" id="boton-nxt" onclick="scrollDerecha()">
+							<img src="img/nxt.png" alt="" />
+						</div>
 					</div>
 				</div>
 			</section>
@@ -211,7 +215,7 @@
 			});
 		</script>
 
-	<!-- 	<script>
+		<!-- 	<script>
 			const largeSlider = () => {
 				let cardContainers = document.querySelectorAll('.card-container');
 				let prevArrow = document.querySelectorAll('.prev');
