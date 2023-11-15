@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/*----------------- FOOTER -------------------*/
+.linea {
+    color: rgb(95, 95, 93);
+    height: 2px;
+}
+.logofooter {
+	color: #f5af19;
+	text-shadow: 10px -8px 17px rgba(243, 212, 8, 0.738);
+	background: linear-gradient(rgb(255, 25, 0), rgb(255, 98, 0));
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 2rem !important;
+	font-weight: 400;
+	font-family: 'Monoton', sans-serif;
+	letter-spacing: 1px;
+}
+.logofooter:hover {
+	color: #f5af19;
+}
+.logofooter span {
+	font-size: 2.3rem;
+	margin: 0px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: red;
+}
+.nav-link a:hover {
+	opacity: 0.5;
+}
+.social-item a {
+	display: block;
+	font-size: 2rem;
+	color: #fff;
+}
+.social-item a:hover {
+	opacity: 0.5;
+}
+.social-icon{
+    color: #f5af19!important;
+}
+.derechos{
+    font-size: 80%;
+}
+.text-deg {
+	background: #f12711; 
+	background: -webkit-linear-gradient(to right, #f12711, #f5af19); 
+	background: linear-gradient(to right, #f12711, #f5af19);
+	background-clip: initial;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 1rem;
+}
+.text-deg a:hover {
+	-webkit-text-fill-color: white;
+	opacity: 0.9;
+}
