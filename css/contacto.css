@@ -1,0 +1,82 @@
+
+.btn {  background: linear-gradient(to right, #f12711, #f5af19);
+        
+}
+
+body {background-color: rgb(12, 12, 12);
+}
+
+h1 { background: #f12711; 
+	background: -webkit-linear-gradient(to right, #f12711, #f5af19); 
+	background: linear-gradient(to right, #f12711, #f5af19);
+	background-clip: initial;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+ 
+h2 { 
+    background: #f12711; 
+	background: -webkit-linear-gradient(to right, #f12711, #f5af19); 
+	background: linear-gradient(to right, #f12711, #f5af19);
+	background-clip: initial;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+
+.form-label{ color: #f16b11
+
+}
+
+#Parrafo1{
+    color: whitesmoke
+}
+
+#Parrafo2{
+    color: whitesmoke
+}
+
+body{
+     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)),
+		url(/img/imagen-contacto.png);
+    background-size: cover;   
+    background-position: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+#CajaForm {
+    border: 0.3rem outset #e96208;
+}
+
+#formErrorContacto {
+    background: #f12711; 
+	background: -webkit-linear-gradient(to right, #f12711, #f5af19); 
+	background: linear-gradient(to right, #f12711, #f5af19);
+	background-clip: initial;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 18px;
+}
+
+
+ @media (min-width: 940px) {
+    #footerContacto {
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+    }
+
+    #CajaForm {
+        width: 60%;
+    }
+} 
+/* ipad mini */
+ @media (min-width: 768px) {
+    #CajaForm {
+        width: 60%;
+    }
+} 
+
