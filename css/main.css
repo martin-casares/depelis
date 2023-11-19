@@ -53,7 +53,9 @@ header {
 }
 
 #menu-burger {
-	color: red !important;
+	color: #f12711; 
+	color: -webkit-linear-gradient(to right, #f12711, #f5af19); 
+	color: linear-gradient(to right, #f12711, #f5af19);
 	font-size: 2rem;
 }
 /* cambiar color del menu amburguesa!!
