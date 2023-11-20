@@ -280,7 +280,7 @@ header {
 	margin-right: 0px;
 }
 .search-box {
-	background-color: #d1d1d111;
+	background-color: #d1d1d13c;
 	padding: 3px 32px;
 	border-radius: 20px;
 	height: 40px;
@@ -288,7 +288,7 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	margin-right: 5px;
-	width: 70%;
+	width: 75%;
 }
 .search-box input {
 	background-color: transparent;
