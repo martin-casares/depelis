@@ -1,0 +1,17 @@
+.text-deg {
+	background: linear-gradient(to right, #f12711, #f5af19);
+	font-size: 2vw;
+	font-weight: 700;
+	border-radius: 10px;
+	border-color: white;
+}
+.button:hover {
+	opacity: 0.5;
+	border-color: black;
+}
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 9)), url(../img/pelicula_destacada2.jpg);
+	background-size: cover;
+	background-position: 50%;
+	height: 21vh;
+}
