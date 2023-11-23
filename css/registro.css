@@ -1,0 +1,126 @@
+:root {
+	font-family: 'Monoton', sans-serif;
+	--font-family: 'Poppins', sans-serif;
+	--transition: all 0.1s cubic-bezier (0.645, 0.045, 0.355, 1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+   
+}
+
+body {
+	background-image: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 12, 7, 0.5)),
+		url(../img/series-netflix.jpg);
+	background-size: cover;
+	object-fit: cover;
+	background-position: center;
+}
+.registroForm {
+	background: rgba(5, 7, 12, 0.6);
+}
+.registro {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 1em;
+}
+.registro .registro-titulo {
+	font-weight: 600;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 1em;
+	font-size: 2.5em;
+	color: rgb(255, 115, 0);
+	font-family: 'Poppins', sans-serif;
+}
+.registro .registroForm {
+	padding: 1.5em;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 500px;
+	border-radius: 20px;
+	border: 2px solid rgba(0, 0, 0.1);
+}
+.registro .registroForm .registro-label {
+	font-weight: bold;
+	width: 100%;
+	padding: 0, 8em;
+	margin-bottom: 0.5em;
+	background: -webkit-linear-gradient(to top, #ffc500, #c21500);
+	background: linear-gradient(to top, #ffc500, #c21500);
+	background-clip: initial;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+}
+.registro .registroForm .registro-input {
+	color: rgb(206, 201, 201);
+	width: 100%;
+	margin-bottom: 1em;
+	padding: 0.8em;
+	border-radius: 9px;
+	border: none;
+	outline-color: rgb(228, 181, 28);
+	background: linear-gradient(rgba(77, 77, 78, 0.6), rgba(77, 77, 78, 0.6));
+	/* outline: none; */
+}
+.registro .registroForm .registro-input-submit[type='submit'] {
+	font-size: 1.1rem;
+	font-weight: bold;
+	margin-top: 1.5em;
+	margin-bottom: 1.5em;
+	color: black;
+	font-family: var(--font-family);
+	transition: var(--transition);
+	background: -webkit-linear-gradient(to right, #ffc500, #c21500);
+	background: linear-gradient(to right, #ffc500, #c21500);
+	width: 100%;
+	padding: 0.8em;
+	border-radius: 9px;
+	border: none;
+	outline-color: rgb(228, 181, 28);
+}
+
+.registro .registroForm .registro-input-submit[type='submit']:active {
+	transform: scale(0.97);
+}
+
+.parrafo {
+	font-size: 1rem;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	margin: 0 auto;
+	font-weight: bold;
+}
+
+.parrafo a {
+	text-decoration: none;
+	color: rgb(255, 115, 0);
+}
+
+@media (max-width: 280px){
+    .registro-titulo{
+			 font-size:1.5rem !important;
+			 }
+
+	  .registro{
+			padding: 0px !important;
+		}
+        
+		.registro-input{
+			padding: 0.4em !important;
+		}
+
+		.registro-input-submit{
+			padding: 0.3em !important;
+		}
+
+    
+} 

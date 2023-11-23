@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap demo</title>
+		<!-- Bootstrap -->
+		<link
+		
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<!-- fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/c8e4d183c2.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!-- main css -->
+		<link rel="stylesheet" href="../css/nav.css" />
+		<link rel="stylesheet" href="../css/registro.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+	</head>
+	<body>
+		<header class="position-relative w-100">
+			<!-- navbar -->
+			<nav class="navbar navbar-expand-lg navigation">
+				<div
+					class="container-fluid d-flex justify-content-center align-items-center"
+				>
+					<a class="navbar-brand logo" href="../index.html">De<span>.</span>Pelis </a>
+					<button
+						class="navbar-toggler shadow-none border-0"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasDarkNavbar"
+						aria-controls="offcanvasDarkNavbar"
+						aria-label="Toggle navigation"
+					>
+						<span id="menu-burger">
+							<i class="fas fa-bars"></i>
+						</span>
+					</button>
+					<!-- sidebar -->
+					<div
+						class="sidebar offcanvas offcanvas-start"
+						tabindex="-1"
+						id="offcanvasDarkNavbar"
+						aria-labelledby="offcanvasDarkNavbarLabel"
+					>
+						<!-- sidebar header -->
+						<div class="offcanvas-header border-bottom">
+							<h5 class="offcanvas-title logo" id="offcanvasDarkNavbarLabel">
+								De<span>.</span>Pelis
+							</h5>
+							<button
+								type="button"
+								class="btn-close btn-close-white"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
+						</div>
+						<!-- sidebar body -->
+						<div class="offcanvas-body menumi">
+							<ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+								<li class="nav-item">
+									<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../pages/detallepelicula.html">peliculas</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../pages/Nosotros.html">Sobre nosotros</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="../pages/contacto.html">Contacto</a>
+								</li>
+							</ul>
+
+							<div class="d-flex justify-content-center">
+								<form action="" class="search-box">
+									<input
+										type="text"
+										name="search"
+										placeholder="Buscar pelicula"
+										class="search-input"
+									/>
+									<button type="submit">
+										<i class="fas fa-search"></i>
+									</button>
+								</form>
+							</div>
+							<div class="content-btn d-flex justify-content-center">
+								<a href="./login.html"><button class="nav-btn">Iniciar sesion</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<section class="registro">
+			<form class="registroForm" id="validarUsuario" autocomplete="off">
+				<h2 class="registro-titulo">Registro</h2>
+				<label class="registro-label">Nombre</label>
+				<input class="registro-input" type="text" placeholder="..." id="nombre" maxlength="25"/>
+				<label class="registro-label">Email</label>
+				<input class="registro-input" type="email" placeholder="..." id="email"  maxlength="30"/>
+				<label class="registro-label">Contraseña</label>
+				<input
+					class="registro-input"
+					type="password"
+					placeholder="..."
+					id="password"
+					maxlength="25"
+				/>
+				<label class="registro-label">Confirmar Contraseña</label>
+				<input
+					class="registro-input"
+					type="password"
+					placeholder="..."
+					id="confirmPassword"
+					maxlength="25"
+				/>
+				<input
+					class="registro-input-submit"
+					type="submit"
+					id="validarRegistro"
+					value="Registrarse"
+				/>
+				<p class="parrafo">
+					Ya tienes una cuenta ? <a href="./login.html">Login</a>
+				</p>
+			</form>
+		</section>
+
+		<footer class="bg-black">
+			<div class="container text-center">
+				<div class="row m-0">
+					<div
+						class="social-item col-12 col-md-4 d-flex flex-wrap align-items-center justify-content-center my-1"
+					>
+						<a class="social-icon m-4" href="http://www.facebook.com" target="_blank"
+							><i class="fa fa-facebook-f"></i
+						></a>
+						<a
+							class="social-icon m-4"
+							href="http://www.instagram.com"
+							target="_blank"
+							><i class="fa fa-instagram"></i
+						></a>
+						<a class="social-icon m-4" href="http://www.twitter.com" target="_blank"
+							><i class="fa fa-twitter"></i
+						></a>
+					</div>
+					<ul
+						class="col-12 col-md-4 nav justify-content-center align-items-center my-1"
+					>
+						<li class="text-deg nav-item">
+							<a
+								href="../index.html"
+								class="nav-link px-3 text-body-secondary text-light fw-bolder"
+								>Home</a
+							>
+						</li>
+						<li class="text-deg nav-item">
+							<a
+								href="../pages/Nosotros.html"
+								class="nav-link px-3 text-body-secondary text-light fw-bolder"
+								>Nosotros</a
+							>
+						</li>
+						<li class="text-deg nav-item">
+							<a
+								href="../pages/contacto.html"
+								class="nav-link px-3 text-body-secondary text-light fw-bolder"
+								>Contacto</a
+							>
+						</li>
+					</ul>
+					<div
+						class="col-12 col-md-4 text-center align-items-center my-3 mt-md-5 mt-lg-2"
+					>
+						<a class="logofooter text-center" href="../index.html"
+							>De<span>.</span>Pelis</a
+						>
+						<p class="text-light mb-0 mt-2 text-center derechos">
+							© 2023 Derechos Reservados - De.Pelis Inc.
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+       <script src="../js/registro.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
