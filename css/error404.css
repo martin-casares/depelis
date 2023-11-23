@@ -9,3 +9,9 @@
 	opacity: 0.5;
 	border-color: black;
 }
+header {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 9)), url(../img/pelicula_destacada2.jpg);
+	background-size: cover;
+	background-position: 50%;
+	height: 21vh;
+}
