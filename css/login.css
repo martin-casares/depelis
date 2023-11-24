@@ -16,6 +16,7 @@ body{
     object-fit: cover;
      background-position: center;
 }
+
 #loginForm{
     background:rgba(5, 7, 12, 0.60);
 }
@@ -128,7 +129,12 @@ border: 2px solid rgba(0, 0, 0.1);
 
     
 } 
-
+.olviparr{
+    margin-top: 10px;  
+    font-size: 14px;
+    text-decoration: none !important;
+    color:white;
+}
 
 
 

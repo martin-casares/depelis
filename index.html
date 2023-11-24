@@ -5,13 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
 
 		<!-- fontawesome -->
-		<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+		<script
+			src="https://kit.fontawesome.com/c8e4d183c2.js"
+			crossorigin="anonymous"
+		></script>
 
 		<!-- css swiper -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 
 		<!-- css main -->
 		<link rel="stylesheet" href="./css/main.css" />
@@ -22,7 +31,9 @@
 		<header class="position-relative w-100">
 			<!-- navbar -->
 			<nav class="navbar navbar-expand-lg navigation">
-				<div class="container-fluid d-flex justify-content-center align-items-center">
+				<div
+					class="container-fluid d-flex justify-content-center align-items-center"
+				>
 					<a class="navbar-brand logo" href="index.html">De<span>.</span>Pelis </a>
 					<button
 						class="navbar-toggler shadow-none border-0"
@@ -30,17 +41,30 @@
 						data-bs-toggle="offcanvas"
 						data-bs-target="#offcanvasDarkNavbar"
 						aria-controls="offcanvasDarkNavbar"
-						aria-label="Toggle navigation">
+						aria-label="Toggle navigation"
+					>
 						<span id="menu-burger">
 							<i class="fas fa-bars"></i>
 						</span>
 					</button>
 					<!-- sidebar -->
-					<div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+					<div
+						class="sidebar offcanvas offcanvas-start"
+						tabindex="-1"
+						id="offcanvasDarkNavbar"
+						aria-labelledby="offcanvasDarkNavbarLabel"
+					>
 						<!-- sidebar header -->
 						<div class="offcanvas-header border-bottom">
-							<h5 class="offcanvas-title logo" id="offcanvasDarkNavbarLabel">De<span>.</span>Pelis</h5>
-							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							<h5 class="offcanvas-title logo" id="offcanvasDarkNavbarLabel">
+								De<span>.</span>Pelis
+							</h5>
+							<button
+								type="button"
+								class="btn-close btn-close-white"
+								data-bs-dismiss="offcanvas"
+								aria-label="Close"
+							></button>
 						</div>
 						<!-- sidebar body -->
 						<div class="offcanvas-body menumi">
@@ -61,14 +85,19 @@
 
 							<div class="d-flex justify-content-center">
 								<form action="" class="search-box">
-									<input type="text" name="search" placeholder="Buscar pelicula" class="search-input" />
+									<input
+										type="text"
+										name="search"
+										placeholder="Buscar pelicula"
+										class="search-input"
+									/>
 									<button type="submit">
 										<i class="fas fa-search"></i>
 									</button>
 								</form>
 							</div>
 							<div class="content-btn d-flex justify-content-center">
-								<button class="nav-btn">Iniciar sesion</button>
+								<a href="./pages/login.html"><button class="nav-btn">Iniciar sesion</button></a>
 							</div>
 						</div>
 					</div>
@@ -78,10 +107,15 @@
 			<!-- cabecera -->
 			<section class="cabecera h-75 d-flex flex-column">
 				<div class="container d-flex-column justify-content-start w-60 m-0">
-					<h1 class="cabecera-titulo text-white text-lg-start">Pelicula destacada</h1>
-					<p class="cabecera-parrafo1 text-white text-lg-start">Descipcion de pelicula descada</p>
+					<h1 class="cabecera-titulo text-white text-lg-start">
+						Pelicula destacada
+					</h1>
+					<p class="cabecera-parrafo1 text-white text-lg-start">
+						Descipcion de pelicula descada
+					</p>
 					<p class="cabecera-parrafo2 text-white text-start">
-						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente sed culpa qui obcaecati ea eum a doloribus, quas animi! Dolorum.
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente sed
+						culpa qui obcaecati ea eum a doloribus, quas animi! Dolorum.
 					</p>
 					<div class="ver">
 						<button type="button" class="red-btn fw-semibold">
@@ -117,10 +151,10 @@
 					<div class="card-container slider1"></div>
 					<div class="slider-botones">
 						<div class="pre-btn" id="boton-izq" onclick="scrollIzquierda()">
-							<img src="../img/pre.png" alt="" />
+							<img src="img/pre.png" alt="" />
 						</div>
 						<div class="nxt-btn" id="boton-nxt" onclick="scrollDerecha()">
-							<img src="../img/nxt.png" alt="" />
+							<img src="img/nxt.png" alt="" />
 						</div>
 					</div>
 				</div>
@@ -157,25 +191,56 @@
 			<hr class="linea bg-light mx-3" />
 			<div class="container text-center">
 				<div class="row m-0">
-					<div class="social-item col-12 col-md-4 d-flex flex-wrap align-items-center justify-content-center my-1">
-						<a class="social-icon m-4" href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook-f"></i></a>
-						<a class="social-icon m-4" href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
-						<a class="social-icon m-4" href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+					<div
+						class="social-item col-12 col-md-4 d-flex flex-wrap align-items-center justify-content-center my-1"
+					>
+						<a class="social-icon m-4" href="http://www.facebook.com" target="_blank"
+							><i class="fa fa-facebook-f"></i
+						></a>
+						<a
+							class="social-icon m-4"
+							href="http://www.instagram.com"
+							target="_blank"
+							><i class="fa fa-instagram"></i
+						></a>
+						<a class="social-icon m-4" href="http://www.twitter.com" target="_blank"
+							><i class="fa fa-twitter"></i
+						></a>
 					</div>
-					<ul class="col-12 col-md-4 nav justify-content-center align-items-center my-1">
+					<ul
+						class="col-12 col-md-4 nav justify-content-center align-items-center my-1"
+					>
 						<li class="text-deg nav-item">
-							<a href="index.html" class="nav-link px-3 text-body-secondary text-light fw-bolder">Home</a>
+							<a
+								href="index.html"
+								class="nav-link px-3 text-body-secondary text-light fw-bolder"
+								>Home</a
+							>
 						</li>
 						<li class="text-deg nav-item">
-							<a href="./pages/aboutus.html" class="nav-link px-3 text-body-secondary text-light fw-bolder">Nosotros</a>
+							<a
+								href="./pages/aboutus.html"
+								class="nav-link px-3 text-body-secondary text-light fw-bolder"
+								>Nosotros</a
+							>
 						</li>
 						<li class="text-deg nav-item">
-							<a href="./pages/contacto.html" class="nav-link px-3 text-body-secondary text-light fw-bolder">Contacto</a>
+							<a
+								href="./pages/contacto.html"
+								class="nav-link px-3 text-body-secondary text-light fw-bolder"
+								>Contacto</a
+							>
 						</li>
 					</ul>
-					<div class="col-12 col-md-4 text-center align-items-center my-3 mt-md-5 mt-lg-2">
-						<a class="logofooter text-center" href="index.html">De<span>.</span>Pelis</a>
-						<p class="text-light mb-0 mt-2 text-center derechos">© 2023 Derechos Reservados - De.Pelis Inc.</p>
+					<div
+						class="col-12 col-md-4 text-center align-items-center my-3 mt-md-5 mt-lg-2"
+					>
+						<a class="logofooter text-center" href="index.html"
+							>De<span>.</span>Pelis</a
+						>
+						<p class="text-light mb-0 mt-2 text-center derechos">
+							© 2023 Derechos Reservados - De.Pelis Inc.
+						</p>
 					</div>
 				</div>
 			</div>
