@@ -38,7 +38,7 @@ body {
 			rgba(255, 255, 240, 0.02) 0.5%,
 			rgba(0, 0, 0, 1) 85%
 		),
-		url(/img/imagen-contacto.png);
+		url(../img/imagen-contacto.png);
 	background-size: cover;
 	background-position: 100%;
 	object-fit: cover;
