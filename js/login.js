@@ -41,12 +41,14 @@ function validarLogin(e) {
 
     if (existeEmail !== undefined) {
         if (existeEmail.password === password) {
-            if (existeEmail.id == 1698276594011) {
-                // location.href = 'home.html';
+            if (existeEmail.id == 1700873207845) {
+                if (existeEmail.email == "admin@gmail.com") {
+                    location.href = 'admin.html';
+                } else {
+                    location.href = 'home.html';
+                }
             } else {
                 location.href = '../index.html';
-                const currentUrl = window.location.href;
-                console.log(currentUrl);
             }
         } else {
             Swal.fire({

@@ -87,8 +87,13 @@ function validarRegistro(e) {
 		title: 'Usuario registrado correctamente',
 		showConfirmButton: false,
 		timer: 1500,
+	}).then(() => {
+		// Después de mostrar el SweetAlert, redirigir al usuario al formulario de inicio de sesión (login.html)
+		
+	window.location.href = 'login.html';
+	
+		// Restablecer el formulario después de la redirección
+		validarUsuario.reset();
 	});
-
-	validarUsuario.reset();
-}
+}	
 
