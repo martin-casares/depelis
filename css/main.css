@@ -30,7 +30,7 @@ a {
 }
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 9)),
-	url(../img/post-5.jpg);
+		url(../img/pelicula_destacada2.jpg);
 	background-size: cover;
 	background-position: 50%;
 	height: 91vh;
@@ -53,8 +53,8 @@ header {
 }
 
 #menu-burger {
-	color: #f12711; 
-	color: -webkit-linear-gradient(to right, #f12711, #f5af19); 
+	color: #f12711;
+	color: -webkit-linear-gradient(to right, #f12711, #f5af19);
 	color: linear-gradient(to right, #f12711, #f5af19);
 	font-size: 2rem;
 }
