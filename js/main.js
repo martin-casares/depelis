@@ -75,14 +75,14 @@ const estrenos = [
 	},
 ];
 
-const peliculas = [
+ const arrayPeliculas = [
 	{
 		img: '../img/post-1.jpg',
 		fecha: 2017,
 		descripcion:
 			'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies',
 		directores: ['Anthony Russo', 'Joe Russo'],
-		categoria: ['Action', 'Adventure', 'Drama'],
+		categoria: 'Adventuras',
 
 		rating: 8.4,
 
@@ -94,7 +94,7 @@ const peliculas = [
 		descripcion:
 			'Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.',
 		directores: ['George Boone'],
-		categoria: ['Drama', 'Romance'],
+		categoria: 'Terror',
 
 		rating: 7.7,
 
@@ -106,7 +106,7 @@ const peliculas = [
 		descripcion:
 			'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic',
 		directores: ['James Cameron'],
-		categoria: ['Drama', 'Romance'],
+		categoria: 'Aventuras',
 
 		rating: 7.8,
 
@@ -118,7 +118,7 @@ const peliculas = [
 		descripcion:
 			'A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.',
 		directores: ['Edward Zwick'],
-		categoria: ['Drama', 'Adventure', 'Thriller'],
+		categoria: 'Terror',
 
 		rating: 8,
 
@@ -130,7 +130,7 @@ const peliculas = [
 		descripcion:
 			'A faithful wife, tired of standing by her devious husband, is enraged when it becomes clear she has been betrayed.',
 		directoros: ['Tyler Perry'],
-		genres: ['Thriller'],
+		categoria: 'Aventuras',
 
 		rating: 5.8,
 
@@ -142,7 +142,7 @@ const peliculas = [
 		descripcion:
 			'As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook.',
 		directores: ['David Fincher'],
-		categoria: ['Biography', 'Drama'],
+		categoria: 'Accion',
 
 		rating: 7.7,
 
@@ -154,7 +154,7 @@ const peliculas = [
 		descripcion:
 			'As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook.',
 		directores: ['David Fincher'],
-		categoria: ['Biography', 'Drama'],
+		categoria: 'Aventuras',
 
 		rating: 7.7,
 
@@ -166,7 +166,7 @@ const peliculas = [
 		descripcion:
 			'As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook.',
 		directores: ['David Fincher'],
-		categoria: ['Biography', 'Drama'],
+		categoria: 'Terror',
 
 		rating: 7.7,
 
@@ -178,21 +178,24 @@ const peliculas = [
 		descripcion:
 			'As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook.',
 		directores: ['David Fincher'],
-		categoria: ['Biography', 'Drama'],
+		categoria: 'Terror',
 
 		rating: 7.7,
 
 		titulo: 'The Social Network',
 	},
-];
+]; 
 const sliderEstrenos = document.querySelector('.swiper-wrapper');
 const sliderContainer = document.getElementById('slider-container');
-const slider = document.getElementById('slider');
+/* const slider = document.getElementById('slider'); */
 const buttonLeft = document.getElementById('button-left');
 const buttonRight = document.getElementById('button-right');
 const cardContainer = document.querySelector('.card-container');
+const slider1 = document.querySelector('.slider1');
 const slider2 = document.querySelector('.slider2');
 const slider3 = document.querySelector('.slider3');
+
+let peliculas = JSON.parse(localStorage.getItem('peliculas')) || arrayPeliculas;
 
 /* carga el slider principal */
 function cargarPeliculas(peliculas) {
@@ -252,27 +255,33 @@ cargarPeliculas(estrenos);
 function cargarSliders(peliculas) {
 	let cardContainers = document.querySelectorAll('.card-container');
 
-	cardContainers.forEach((item, index) => {
+	cardContainers.forEach((item) => {
 		peliculas.map((movie) => {
-			const card = document.createElement('div');
-
-			card.classList.add('card');
-
-			card.innerHTML = `
-						<img src="${movie.img}" alt="" class="card-img img-fluid" />
-						<div class="card-body">
-						<h2 class="name">${movie.titulo}</h2>
-						<h6 class="des">
-							${movie.descripcion}
-						</h6>
-						<button class="watchlist-btn text-center">
-						<i class="fa fa-play mx-1"></i>
-						Ver ahora</button>
-					</div>	 
-		
-						`;
-			item.appendChild(card);
+			
+			console.log(movie.categoria)
+			if(movie.categoria == "Aventuras"){
+				
+				const card = document.createElement('div');
+	
+				card.classList.add('card');
+	
+				card.innerHTML = `
+							<img src="${movie.img}" alt="" class="card-img img-fluid" />
+							<div class="card-body">
+							<h2 class="name">${movie.titulo}</h2>
+							<h6 class="des">
+								${movie.descripcion}
+							</h6>
+							<button class="watchlist-btn text-center">
+							<i class="fa fa-play mx-1"></i>
+							Ver ahora</button>
+						</div>	 
+			
+							`;
+				item.appendChild(card);
+			}
 		});
+		
 	});
 }
 

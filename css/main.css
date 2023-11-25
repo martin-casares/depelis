@@ -30,7 +30,7 @@ a {
 }
 header {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.835), rgba(0, 0, 0, 9)),
-		url(../img/pelicula_destacada2.jpg);
+	url(../img/post-5.jpg);
 	background-size: cover;
 	background-position: 50%;
 	height: 91vh;
@@ -239,7 +239,7 @@ header {
 }
 
 /* media query xxl */
-@media (mi-width: 1400px) {
+@media (min-width: 1400px) {
 	.navigation {
 		margin: auto;
 	}
@@ -637,7 +637,7 @@ main .estrenos {
 	left: -3px;
 	height: 18px;
 	width: 18px;
-	background-image: url(images/add.png);
+	/* background-image: url(../img/add.png); */
 	background-size: cover;
 	transform: scale(0.4);
 }
