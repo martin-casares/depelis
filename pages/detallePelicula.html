@@ -28,7 +28,11 @@
   <link rel="stylesheet" href="../css/nav.css" />
   <link rel="stylesheet" href="../css/detallePelicula.css" />
   <style type="text/css"></style>
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+  <script src="../js/detallePelicula.js"></script>
+  
 		<title>Avengers: End Game</title>
+    
     
 
     
@@ -38,6 +42,9 @@
 
 
 <body>
+
+
+  
 
   <header>
     <nav class="navbar navbar-expand-lg navigation w-100">
@@ -184,19 +191,9 @@
 
         </div>
 
-        <script>
-          function mostrar(){
-            document.getElementById('trailer').style.display ='block';
-          }
+        
 
-          function ocultar(){
-            document.getElementById('trailer').style.display ='none';
-            
-          }
-
-        </script>
-
-
+        
         
 
         
@@ -209,151 +206,81 @@
 
        <!-- Fin Trailer  -->
     
+        <!-- COmentarios FAcebook -->
 
-    <section class="contenedor-comentarios container mb-4 mt-5">
-      <div class="area-comentar">
-          <div class="avatar">
-              <img src="http://localhost/multimedia/relleno/img-c9.png" alt="img">
-          </div>
-          <form action="#" method="post" class="inputs-comentarios">
-              <textarea name="" class="area-comentario"></textarea>
-              <div class="botones-comentar">
-                  <div class="boton-subir-archivo">
-                      <label class="boton-file" for="adjuntar">
-                          <i class="far fa-image"></i>
-                          Adjuntar archivo
-                      </label>
-                      <input type="file" name="" value="" placeholder="" id="adjuntar">
-                  </div>
-                  <button class="boton-enviar" type="sutmit">
-                      <i class="fas fa-paper-plane"></i>
-                      Enviar
-                  </button>
-              </div>
-          </form>
-      </div>
-      <div class="publicacion-realizada">
-          <div class="usuario-publico">
+        <section class="contenedor-comentarios container mb-4 mt-5">
+          <div class="area-comentar" >
               <div class="avatar">
-                  <img src="http://localhost/multimedia/relleno/img-c9.png" alt="img">
+                  <img src="../img/Alejo.jpg" alt="foto perfil">
               </div>
-              <div class="contenido-publicacion">
-                  <h4>Carolina de la valle</h4>
-                  <ul>
-                      <li>Hace 3 min</li>
-                  </ul>
-              </div>
-              <div class="menu-comentario">
-                  <i class="fas fa-pen"></i>
-                  <ul class="menu">
-                      <li><a href="">Editar</a></li>
-                      <li><a href="">Eliminar</a></li>
-                  </ul>
-              </div>
-          </div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores aliquam possimus, doloremque repellat assumenda ipsam magni ducimus, dolorem explicabo</p>
-          <div class="archivo-publicado">
-              <img src="http://localhost/multimedia/relleno/img-s5.png" alt="img">
-          </div>
-          <div class="botones-comentario">
-              <button type="" class="boton-puntuar">
-                  <i class="fas fa-thumbs-up"></i>
-                  45
-              </button>
-              <button type="" class="boton-responder">
-                  Comentar
-              </button>
-          </div>
-      </div>
-      <div class="comentarios-usuarios">
-          <!-- comentario principal -->
-          <div class="comentario-principal-usuario">
-              <div class="avatar">
-                  <img src="http://localhost/multimedia/relleno/img-c10.png" alt="img">
-              </div>
-              <div class="comentario">
-                  <div class="usuario-comentario">
-                      <div class="texto">
-                          <a href="#" title="" class="nombre-usuario">Camila valle</a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla tenetur necessitatibus, error debitis provident obcaecati blanditiis incidunt amet suscipit libero praesentium ducimus omnis harum commodi nobis modi perspiciatis? Quia, facilis.
-                          <div class="menu-comentario">
-                              <i class="fas fa-pen"></i>
-                              <ul class="menu">
-                                  <li><a href="">Editar</a></li>
-                                  <li><a href="">Eliminar</a></li>
-                              </ul>
-                          </div>
+              <form class="inputs-comentarios" id="frmUsers">
+                  <input class="area-comentario" value="Cerveza" type="text" id="product">
+                  <div class="botones-comentar">
+                      <div class="boton-subir-archivo">
+                          <label class="boton-file" for="adjuntar">
+                              <i class="far fa-image"></i>
+                              Adjuntar archivo
+                          </label>
+                          <input type="file" id="adjuntar">
                       </div>
-                      <div class="botones-comentario">
-                          <button type="" class="boton-puntuar">
-                              <i class="fas fa-thumbs-up"></i>
-                              5
-                          </button>
-                          <button type="" class="boton-responder">
-                              responrder
-                          </button>
-                          <span class="tiempo-comentario">
-                              hece 3 min
-                          </span>
-                      </div>
+                      <div class="control">
+                      
+                      <button class="boton-enviar" type="button" onclick="add3()">
+                          <i class="fas fa-paper-plane"></i>
+                          Enviar
+                      </button>
+                    </div>
                   </div>
-  
-                  <!-- contenedor sub comentarios -->
-                  <div class="contenedor-sub-comentarios">
-                      <!-- sub-comentario uno -->
-                      <div class="comentario-principal-usuario">
-                          <div class="avatar">
-                              <img src="http://localhost/multimedia/relleno/img-c7.png" alt="img">
-                          </div>
-                          <div class="comentario">
-                              <div class="usuario-comentario">
-                                  <div class="texto">
-                                      <a href="#" title="" class="nombre-usuario">Estevan Hernandez</a> Lorem ipsum dolor sit amet adipisicing elit, sed do eiusmod
-                                      <div class="menu-comentario">
-                                          <i class="fas fa-pen"></i>
-                                          <ul class="menu">
-                                              <li><a href="">Editar</a></li>
-                                              <li><a href="">Eliminar</a></li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                                  <div class="botones-comentario">
-                                      <button type="" class="boton-puntuar">
-                                          <i class="fas fa-thumbs-up"></i>
-                                          12
-                                      </button>
-                                      <button type="" class="boton-responder">
-                                          responrder
-                                      </button>
-                                      <span class="tiempo-comentario">
-                                          hece 3 min
-                                      </span>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-  
-              </div>
-  
+              </form>
           </div>
-  
-          <div class="comentar-publicacion">
-              <div class="avatar">
-                  <img src="http://localhost/multimedia/relleno/img-c10.png" alt="img">
-              </div>
-             <form action="#" method="post" class="comentar-comentario">
-                 <input type="text" name="" value="" placeholder="">
-                 <button type="" class="boton-enviar">
-                     <i class="fas fa-paper-plane"></i>
-                 </button>
-             </form>
-          </div>
+          <div class="publicacion-realizada mb-5 mt-5">
+            <div class="usuario-publico">
+                <div class="avatar">
+                    <img src="../img/Alejo.jpg" alt="foto perfil">
+                </div>
+                <div class="contenido-publicacion">
+                    <h4>Carolina de la valle</h4>
+                    <ul>
+                        <li>Hace 3 min</li>
+                    </ul>
+                </div>
+                <div class="menu-comentario">
+                    <i class="fas fa-pen"></i>
+                    <ul class="menu">
+                        <li><a href="">Editar</a></li>
+                        <li><a href="">Eliminar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores aliquam possimus, doloremque repellat assumenda ipsam magni ducimus, dolorem explicabo</p>
+            
+            <div class="botones-comentario">
+                <button type="" class="boton-puntuar">
+                    <i class="fas fa-thumbs-up"></i>
+                    45
+                </button>
+                
+            </div>
+        </div>
+ 
+           <!-- Fin Comentarios FAcebook -->
+
+        
+
           
-      </div>
-  </section>
+    
+        <div id="list"></div>
+    
+        
+    
+       
+
 
         <!-- Inicio Cards -->
 
+        
+
+  
 
   <h5 class="mb-4 mt-5 text-center">Recomendaciones</h5>
 
