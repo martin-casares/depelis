@@ -1,6 +1,8 @@
 
           
-          function mostrar(){
+          
+          
+           function mostrar(){
             document.getElementById('trailer').style.display ='block';
           }
 
@@ -9,19 +11,19 @@
             
           }
 
-
+ 
                    
      
 
         function add3(){
-          let content = `<div>
-          <div class="publicacion-realizada mb-5 mt-5">
+
+          let content = `<div class="publicacion-realizada mb-5 mt-5">
           <div class="usuario-publico">
               <div class="avatar">
-                  <img src="http://localhost/multimedia/relleno/img-c9.png" alt="img">
+                  <img src="../img/Alejo.jpg" alt="foto perfil">
               </div>
               <div class="contenido-publicacion">
-                  <h4>Carolina de la valle</h4>
+                  <h4>Alejo Calandra</h4>
                   <ul>
                       <li>Hace 3 min</li>
                   </ul>
@@ -29,7 +31,7 @@
               <div class="menu-comentario">
                   <i class="fas fa-pen"></i>
                   <ul class="menu">
-                      <li><a href="">Editar</a></li>
+                      
                       <li><a href="">Eliminar</a></li>
                   </ul>
               </div>
@@ -38,7 +40,7 @@
           
           <div class="botones-comentario">
               <button type="" class="boton-puntuar">
-                  <i class="fas fa-thumbs-up"></i>
+                  <i class="fas fa-thumbs-up" id="mg"></i>
                   45
               </button>
               
@@ -47,3 +49,5 @@
       
           list.innerHTML += content;
       }
+
+      

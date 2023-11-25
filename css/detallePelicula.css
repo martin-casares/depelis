@@ -71,6 +71,9 @@ body {
         margin-top: 30px;
         margin-left:40%;                 }
 
+
+      
+
         @media screen and (max-width:1500px) {
        
             width: 700px;
@@ -232,10 +235,15 @@ text-align: left;
 .card {
     width: 30%;
 
-    @media screen and (max-width:280px) {
+    
+
+
+    @media screen and (max-width:780px) {
        
         width: 45%;
                        }
+
+    
 }
 
 
