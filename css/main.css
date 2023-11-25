@@ -238,7 +238,7 @@ header {
 }
 
 /* media query xxl */
-@media (mi-width: 1400px) {
+@media (min-width: 1400px) {
 	.navigation {
 		margin: auto;
 	}
@@ -636,7 +636,7 @@ main .estrenos {
 	left: -3px;
 	height: 18px;
 	width: 18px;
-	background-image: url(images/add.png);
+	/* background-image: url(../img/add.png); */
 	background-size: cover;
 	transform: scale(0.4);
 }
