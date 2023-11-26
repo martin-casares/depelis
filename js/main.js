@@ -1,5 +1,3 @@
-/* import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'; */
-
 const estrenos = [
 	{
 		img: '../img/p-1.jpg',
@@ -75,116 +73,6 @@ const estrenos = [
 	},
 ];
 
- const arrayPeliculas = [
-	{
-		img: '../img/post-1.jpg',
-		fecha: 2017,
-		descripcion:
-			'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies',
-		directores: ['Anthony Russo', 'Joe Russo'],
-		categoria: 'Adventuras',
-
-		rating: 8.4,
-
-		titulo: 'Avengers: End Game',
-	},
-	{
-		img: '../img/post-2.jpg	',
-		fecha: 2014,
-		descripcion:
-			'Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.',
-		directores: ['George Boone'],
-		categoria: 'Terror',
-
-		rating: 7.7,
-
-		titulo: 'Fault in our stars',
-	},
-	{
-		img: '../img/post-3.jpg',
-		fecha: 1997,
-		descripcion:
-			'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic',
-		directores: ['James Cameron'],
-		categoria: 'Aventuras',
-
-		rating: 7.8,
-
-		titulo: 'Titanic',
-	},
-	{
-		img: '../img/post-4.jpg',
-		fecha: 2006,
-		descripcion:
-			'A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.',
-		directores: ['Edward Zwick'],
-		categoria: 'Terror',
-
-		rating: 8,
-
-		titulo: 'Blood Diamond',
-	},
-	{
-		img: '../img/post-5.jpg',
-		fecha: 2018,
-		descripcion:
-			'A faithful wife, tired of standing by her devious husband, is enraged when it becomes clear she has been betrayed.',
-		directoros: ['Tyler Perry'],
-		categoria: 'Aventuras',
-
-		rating: 5.8,
-
-		titulo: 'Acrimony',
-	},
-	{
-		img: '../img/post-6.jpg',
-		fecha: 2010,
-		descripcion:
-			'As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook.',
-		directores: ['David Fincher'],
-		categoria: 'Accion',
-
-		rating: 7.7,
-
-		titulo: 'The Social Network',
-	},
-	{
-		img: '../img/post-6.jpg',
-		fecha: 2010,
-		descripcion:
-			'As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook.',
-		directores: ['David Fincher'],
-		categoria: 'Aventuras',
-
-		rating: 7.7,
-
-		titulo: 'The Social Network',
-	},
-	{
-		img: '../img/post-6.jpg',
-		fecha: 2010,
-		descripcion:
-			'As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook.',
-		directores: ['David Fincher'],
-		categoria: 'Terror',
-
-		rating: 7.7,
-
-		titulo: 'The Social Network',
-	},
-	{
-		img: '../img/post-6.jpg',
-		fecha: 2010,
-		descripcion:
-			'As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook.',
-		directores: ['David Fincher'],
-		categoria: 'Terror',
-
-		rating: 7.7,
-
-		titulo: 'The Social Network',
-	},
-]; 
 const sliderEstrenos = document.querySelector('.swiper-wrapper');
 const sliderContainer = document.getElementById('slider-container');
 /* const slider = document.getElementById('slider'); */
@@ -195,7 +83,7 @@ const slider1 = document.querySelector('.slider1');
 const slider2 = document.querySelector('.slider2');
 const slider3 = document.querySelector('.slider3');
 
-let peliculas = JSON.parse(localStorage.getItem('peliculas')) || arrayPeliculas;
+peliculas = JSON.parse(localStorage.getItem('peliculas'));
 
 /* carga el slider principal */
 function cargarPeliculas(peliculas) {
@@ -251,37 +139,37 @@ function cargarPeliculas(peliculas) {
 
 cargarPeliculas(estrenos);
 
-// cargar slider secundarios
 function cargarSliders(peliculas) {
-	let cardContainers = document.querySelectorAll('.card-container');
+	const categoriasUnicas = [...new Set(peliculas.map((p) => p.categoria))];
 
-	cardContainers.forEach((item) => {
-		peliculas.map((movie) => {
-			
-			console.log(movie.categoria)
-			if(movie.categoria == "Aventuras"){
-				
-				const card = document.createElement('div');
-	
-				card.classList.add('card');
-	
-				card.innerHTML = `
-							<img src="${movie.img}" alt="" class="card-img img-fluid" />
-							<div class="card-body">
-							<h2 class="name">${movie.titulo}</h2>
-							<h6 class="des">
-								${movie.descripcion}
-							</h6>
-							<button class="watchlist-btn text-center">
-							<i class="fa fa-play mx-1"></i>
-							Ver ahora</button>
-						</div>	 
-			
-							`;
-				item.appendChild(card);
+	categoriasUnicas.forEach((categoria) => {
+		const peliculasDeCategoria = peliculas.filter((p) => p.categoria === categoria);
+
+		peliculasDeCategoria.forEach((pelicula) => {
+			const card = document.createElement('div');
+			card.classList.add('card');
+			card.innerHTML = `
+      <img src="${pelicula.img}" alt="" class="card-img img-fluid" />
+      <div class="card-body">
+        <h2 class="name">${pelicula.titulo}</h2>
+        <h6 class="des">${pelicula.descripcion}</h6>
+        <button class="watchlist-btn text-center">
+          <i class="fa fa-play mx-1"></i>
+          Ver ahora
+        </button>
+      </div>	 
+    `;
+
+			// Dependiendo de la categoría, agrega el card al slider correspondiente
+			if (categoria === 'Aventuras') {
+				slider1.appendChild(card);
+			} else if (categoria === 'Terror') {
+				slider2.appendChild(card);
+			} else if (categoria === 'Accion') {
+				slider3.appendChild(card);
 			}
+			// Puedes agregar más condiciones para otras categorías si es necesario
 		});
-		
 	});
 }
 
