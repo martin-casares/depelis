@@ -1,6 +1,6 @@
 const estrenos = [
 	{
-		img: '../img/p-1.jpg',
+		img: '../img/p-1.png',
 		fecha: 2017,
 		descripcion:
 			'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies.',
@@ -10,6 +10,8 @@ const estrenos = [
 		rating: 8.4,
 
 		titulo: 'Avengers: End Game',
+
+		enlace: '../pages/detallePelicula.html',
 	},
 	{
 		img: '../img/p-2.jpg',
@@ -101,7 +103,9 @@ function cargarPeliculas(peliculas) {
 		`;
 		div3.classList.add('main-slider-img');
 		div3.innerHTML = `
-      <img class="img-fluid" src="${pelicula.img}" alt="${pelicula.titulo}"/>   
+			<a href="../pages/detallePelicula.html"><img class="img-fluid" src="${pelicula.img}" alt="${pelicula.titulo}"/> </a>
+		
+		
 			<div class="main-slider-text">
 		
 			<span class="quality">Full HD</span>
@@ -153,10 +157,10 @@ function cargarSliders(peliculas) {
       <div class="card-body">
         <h2 class="name">${pelicula.titulo}</h2>
         <h6 class="des">${pelicula.descripcion}</h6>
-        <button class="watchlist-btn text-center">
+        <a href="../pages/detallePelicula.html" class="watchlist-btn btn text-center">
           <i class="fa fa-play mx-1"></i>
-          Ver ahora
-        </button>
+           Ver ahora 
+        </a>
       </div>	 
     `;
 
