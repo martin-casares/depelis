@@ -73,6 +73,123 @@ const estrenos = [
 	},
 ];
 
+let arrayPeliculas = [
+	{
+		id: '1233',
+		img: '../img/post-1.jpg',
+		descripcion:
+			'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies',
+		categoria: 'Aventuras',
+		disponible: 'si',
+		titulo: 'Avengers: End Game',
+	},
+
+	{
+		id: '1234',
+		img: '../img/post-2.jpg	',
+		descripcion:
+			'Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.',
+		categoria: 'Aventuras',
+		disponible: 'no',
+		titulo: 'Fault in our stars',
+	},
+
+	{
+		id: '1235',
+		img: 'https://hips.hearstapps.com/hmg-prod/images/the-hills-have-eyes-608777333-large-6530e777c3e68.jpg?crop=0.995xw:0.956xh;0,0.0436xh&resize=980:*',
+		descripcion:
+			'Al adentrarse en una zona desértica de acceso restringido donde el Gobierno está experimentando,a auténtica pesadilla.',
+		categoria: 'Terror',
+		disponible: 'si',
+		titulo: 'The hills have eyes',
+	},
+
+	{
+		id: '1236',
+		img: '../img/post-4.jpg',
+		descripcion:
+			'A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.',
+		categoria: 'Aventuras',
+		disponible: 'si',
+		titulo: 'Blood Diamond',
+	},
+	{
+		id: '1237',
+		img: 'https://hips.hearstapps.com/hmg-prod/images/martyrs-833344715-large-6530e80201999.jpg?crop=0.9522012578616352xw:1xh;center,top&resize=980:*',
+		descripcion:
+			'Mártires cuenta la historia de Lucie, una niña desaparecida en Francia en 1969 que es  a su estado, es incapaz de contar nada de lo sucedido..',
+		categoria: 'Terror',
+		disponible: 'si',
+		titulo: 'Martires',
+	},
+
+	{
+		id: '1238',
+		img: 'https://hips.hearstapps.com/hmg-prod/images/28-days-later-469569758-large-6530e6afa5791.jpg?crop=0.9916666666666667xw:1xh;center,top&resize=980:*',
+		descripcion:
+			'Tras la propagación de un virus letal que acaba con la vida de miles de personas en Gran Bretaña, unos  Londres.',
+		disponible: 'si',
+		categoria: 'Terror',
+		titulo: '28 dias despues',
+	},
+	{
+		id: '1239',
+		img: 'https://hips.hearstapps.com/hmg-prod/images/the-descent-396561570-large-6530e57274f5a.jpg?crop=0.9434464404524285xw:1xh;center,top&resize=980:*',
+		descripcion:
+			'Cuando un grupo de seis amigas se reúne para emprender una expedición espeleológica, jamás imaginará que su vida',
+		disponible: 'si',
+		categoria: 'Terror',
+		titulo: 'The descent',
+	},
+
+	{
+		id: '1240',
+		img: 'https://www.pequeocio.com/wp-content/uploads/2020/01/jungle-cruise-pelicula-2020-385x550.jpg.webp',
+		descripcion:
+			'Frank es un capitán de barco que lleva por la selva a la científica Lily Houghton y a su hermano curativos.',
+		disponible: 'si',
+		categoria: 'Aventuras',
+		titulo: 'The Jungle Cruise',
+	},
+	{
+		id: '1241',
+		img: 'https://www.pequeocio.com/wp-content/uploads/2019/12/soul-cartel-pelicula-disney-pixar-372x550.jpeg.webp',
+		descripcion:
+			'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
+		disponible: 'si',
+		categoria: 'Aventuras',
+		titulo: 'Soul',
+	},
+	{
+		id: '1242',
+		img: 'https://cdn.atomix.vg/wp-content/uploads/2015/05/atomix_movies_mad_max_fury_road_furia_en_el_camino_pelicula_post_apocaliptica_george_miller_tom_hardy_charlize_teron_warner_bros_recomendacion_cine_ver_cartelera.png',
+		descripcion:
+			'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
+		disponible: 'si',
+		categoria: 'Accion',
+		titulo: 'Mad Max',
+	},
+	{
+		id: '1243',
+		img: 'https://es.web.img3.acsta.net/c_310_420/pictures/20/01/09/15/10/0234685.jpg',
+		descripcion:
+			'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
+		disponible: 'si',
+		categoria: 'Accion',
+		titulo: '1917',
+	},
+	{
+		id: '1244',
+		img: 'https://img.asmedia.epimg.net/resizer/DFTtArUNaW419i0UdsN_OkIvDmU=/736x0/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/ZUZCKWWLVZN37ACDYH5SJJX4TM.jpg',
+		descripcion:
+			'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
+		disponible: 'si',
+		categoria: 'Accion',
+		titulo: '1917',
+	},
+];
+
+
 const sliderEstrenos = document.querySelector('.swiper-wrapper');
 const sliderContainer = document.getElementById('slider-container');
 /* const slider = document.getElementById('slider'); */
@@ -83,7 +200,30 @@ const slider1 = document.querySelector('.slider1');
 const slider2 = document.querySelector('.slider2');
 const slider3 = document.querySelector('.slider3');
 
-peliculas = JSON.parse(localStorage.getItem('peliculas'));
+/* /peliculas = JSON.parse(localStorage.getItem('peliculas'));*/
+
+
+
+function obtenerDatos() {
+	const storedData = localStorage.getItem('peliculas');
+	if (storedData) {
+		return JSON.parse(storedData);
+	} else {
+		// Si el localStorage está vacío, guarda los datos del array predeterminado en el localStorage
+		const defaultData = arrayPeliculas;
+		guardarEnLocalStorage(defaultData);
+		return defaultData;
+	}
+}
+
+let peliculas = obtenerDatos();
+
+function guardarEnLocalStorage(data) {
+	localStorage.setItem('peliculas', JSON.stringify(data));
+}
+
+
+
 
 /* carga el slider principal */
 function cargarPeliculas(peliculas) {
