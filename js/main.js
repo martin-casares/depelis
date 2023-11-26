@@ -200,14 +200,16 @@ let peliculas = JSON.parse(localStorage.getItem('peliculas')) || arrayPeliculas;
 /* funcion busqueda */
 const buscarButton = document.getElementById('buscarButton');
 
-    buscarButton.addEventListener('click', buscarPeli);      
+    buscarButton.addEventListener('click', buscarPeli);
+
+	let peliculastorage = JSON.parse(localStorage.getItem('peliculas'));     
 
 function buscarPeli(e){
 	e.preventDefault();
 	
 	const inputBusqueda = document.getElementById('busqueda').value.toLowerCase();
  
-	const peliculasFiltradas = arrayPeliculas.filter(pelicula =>
+	const peliculasFiltradas = peliculastorage.filter(pelicula =>
 	pelicula.titulo.toLowerCase().includes(inputBusqueda));
 	
 		const peliculaEncontrada = JSON.stringify(peliculasFiltradas)
