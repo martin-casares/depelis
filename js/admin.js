@@ -114,7 +114,7 @@ let arrayPeliculas = [
 	},
 ];
 
-const tablaPeliculas = document.querySelector('.tabla-peliculas tbody');
+const tablaPeliculas = document.querySelector('#tablaPeliculas');
 const formPeliculas = document.querySelector('.formPeliculas');
 const formEditarPeliculas = document.querySelector('#formEditarPeliculas');
 const formError = document.querySelector('#formError');
@@ -170,12 +170,12 @@ function cargarTablaPeliculas() {
 	/>
 		</td>
 		<td>
-			<button class="btn btn-secondary" onclick="mostrarEditarPelicula(${pelicula.id})"> <i class="fa fa-pen-square"></i></button>
+			<button class="btn" id="botonEdit" onclick="mostrarEditarPelicula(${pelicula.id})"> <i class="fa fa-pen-square"></i></button>
 
 			
 			<button class="btn btn-secondary" id="like" onclick="cambiarImagen(${pelicula.id})"><i class="fa fa-star"></i></button>
 			
-			<button class="btn btn-secondary" onclick="borrarPelicula(${pelicula.id})"><i class="fa fa-trash"></i></button>
+			<button class="btn" id="botonEdit2" onclick="borrarPelicula(${pelicula.id})"><i class="fa fa-trash"></i></button>
 
 			</td>
 		
@@ -309,6 +309,17 @@ function editarPelicula(e) {
 }
 
 function borrarPelicula(id) {
+	Swal.fire({
+		title: "¿Estás seguro?",
+		text: "Estas a punto de eliminar esta pelicula",
+		icon: "warning",
+		showCancelButton: true,
+		confirmButtonColor: "#d33",
+		cancelButtonColor: "#3085d6",
+		confirmButtonText: "Sí, eliminar",
+		cancelButtonText: "Cancelar",
+	  }).then((result) => {
+		if (result.isConfirmed) {
 	peliculas = peliculas.filter(function (pelicula) {
 		return pelicula.id !== id;
 	});
@@ -316,6 +327,9 @@ function borrarPelicula(id) {
 	localStorage.setItem('peliculas', JSON.stringify(peliculas));
 
 	cargarTablaPeliculas();
+	Swal.fire("Eliminada", "La pelicula fue eliminada con exito", "success");
+	}
+	});
 }
 
 /* boton cerrar del modal */
@@ -399,3 +413,141 @@ window.previusPage = () => {
 	}
 }; */
 // fin paginacion
+//
+//
+//
+// Tabla usuarios JS
+
+const tablaUsuario = document.querySelector("#tablaUsuario");
+let usuarios = JSON.parse(localStorage.getItem("usuarios"));
+const formUsuariosEditar = document.querySelector("#formUsuariosEditar");
+//ejecutar evento submit de editar usuario
+formUsuariosEditar.addEventListener('submit', editarUsuarios);
+
+//boton cancelar del modal
+cerrarModal.addEventListener("click", function () {
+  // guardo el modal en variable
+  let editUsuarioModal = document.getElementById("editUsuarioModal");
+  
+  editUsuarioModal.style.display = "none"; 
+});
+
+
+function cargarTablaUsuario() {
+
+    tablaUsuario.innerHTML = ``;
+    usuarios.map(function (usuario) {
+      let tr = document.createElement("tr");
+  
+      tr.innerHTML = `
+                  <td class="align-middle">${usuario.id}</td>
+                  <td class="align-middle d-none d-md-table-cell">${usuario.nombre}</td>
+                  <td class="align-middle">${usuario.email}</td>
+                  <td>
+                    <button class="btn" id="botonEdit" onclick="mostrarEditarUsuarioModal(${usuario.id})"><i class="fa-solid fa-user-pen"></i></button>
+                    <button class="btn" id="botonEdit2" onclick="borrarUsuario(${usuario.id})"><i class="fa-solid fa-user-xmark"></i></button>
+                  </td>`
+  
+      tablaUsuario.appendChild(tr);
+    });
+}
+    cargarTablaUsuario();
+
+
+function mostrarEditarUsuarioModal(id){
+  const usuario = usuarios.find(function (user){
+    return user.id === id;
+  });
+  
+  //traemos los inputs del formulario editar y remplazamos su valor por los que ya tiene el usuario
+  document.querySelector("#nombreEditarUsuario").value = usuario.nombre;
+  document.querySelector("#emailEditarUsuario").value = usuario.email;
+
+  //crear atributo id al form
+  formUsuariosEditar.setAttribute("data-id", id);
+
+  //mostrar modal
+  document.querySelector("#editUsuarioModal").style.display = "block";
+}
+
+function editarUsuarios(e){
+  e.preventDefault();
+  
+  const nombreEditarUsuario = document.querySelector('#nombreEditarUsuario').value;
+	const emailEditarUsuario = document.querySelector('#emailEditarUsuario').value;
+  //expresion regular para validar email
+    const validarEmail = /^[\w+.-]+@\w+([.-]?\w+)*(\.\w{2,})+$/;
+    const resultadoValidacionEmail = validarEmail.test(emailEditarUsuario);
+  //expresion regular para validar nombre
+    const validarNombre = /^[a-zA-Z]+$/;
+    const resultadoValidacionNombre = validarNombre.test(nombreEditarUsuario);
+
+  //validaciones
+    if(nombreEditarUsuario === "" || emailEditarUsuario === ""){
+      mostrarError("*Todos los campos son obligatorios*"); 
+      return;
+      }else if (!resultadoValidacionEmail){
+      mostrarError("*Ingrese un Email valido*"); return;
+      }else if (!resultadoValidacionNombre){
+      mostrarError("*Ingrese un nombre que no contenga signos, numeros ni caracteres especiales*"); 
+      return;
+      }else { Swal.fire({
+        icon: "success",
+        text: "Editado exitosamente!",
+      });
+    }
+
+    //obtener el ID del usuario que estamos editando
+	const id = formUsuariosEditar.getAttribute('data-id');
+  
+  const usuarioIndex = usuarios.findIndex(function(usuario) {
+    return usuario.id === parseInt(id);
+  });
+
+   usuarios[usuarioIndex].nombre = nombreEditarUsuario;
+   usuarios[usuarioIndex].email = emailEditarUsuario;
+
+  document.querySelector('#editUsuarioModal').style.display = "none";
+
+  localStorage.setItem('usuarios', JSON.stringify(usuarios));
+  cargarTablaUsuario();
+	
+}
+
+
+
+
+function mostrarError(mensaje) {
+
+  formErrorModalEditUser.textContent = mensaje;
+
+  setTimeout(() => {
+    formErrorModalEditUser.textContent = "";
+  }, 3000);
+}
+
+
+
+function borrarUsuario(id){
+	Swal.fire({
+		title: "¿Estás seguro?",
+		text: "Estas a punto de eliminar un usuario",
+		icon: "warning",
+		showCancelButton: true,
+		confirmButtonColor: "#d33",
+		cancelButtonColor: "#3085d6",
+		confirmButtonText: "Sí, borrarlo",
+		cancelButtonText: "Cancelar",
+	  }).then((result) => {
+		if (result.isConfirmed) {
+		  // Filtrar
+		usuarios = usuarios.filter(function (usuario) {
+		return usuario.id !== id;
+	});
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
+  
+    cargarTablaUsuario();
+	Swal.fire("Eliminado", "El usuario fue eliminado con exito", "success");
+	}
+});
+}
