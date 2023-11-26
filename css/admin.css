@@ -61,3 +61,25 @@ h4 {
 }
 
 /* solapas */
+/* css tabla usuarios */
+#botonEdit {
+	background: #f5af19;
+	 
+}
+
+#botonEdit2 {
+	background: #f12711;
+}
+
+#formErrorModalEditUser {
+	background: #f12711;
+	background: -webkit-linear-gradient(to right, #f12711, #f5af19);
+	background: linear-gradient(to right, #f12711, #f5af19);
+	background-clip: initial;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+	
+}
