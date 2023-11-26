@@ -44,8 +44,6 @@ function validarLogin(e) {
             if (existeEmail.id == 1700873207845) {
                 if (existeEmail.email == "admin@gmail.com") {
                     location.href = 'admin.html';
-                } else {
-                    location.href = 'home.html';
                 }
             } else {
                 location.href = '../index.html';

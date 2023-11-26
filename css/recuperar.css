@@ -1,0 +1,142 @@
+:root{
+    --font-family: 'Poppins', sans-serif;
+    --transition: all 0.1s cubic-bezier (0.645, 0.045, 0.355, 1);
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: var(--font-family);
+    background-image: linear-gradient(rgba(5, 7, 12, 0.50), rgba(5, 12, 7, 0.50)),
+    url(../img/recuperarimg.jpeg);
+    background-size: cover;
+    object-fit: cover;
+     background-position: center;
+}
+
+#recuperarForm{
+    background:rgba(5, 7, 12, 0.60);
+}
+.recuperar{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.recuperar #recuperarForm .recuperar-titulo{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    color: rgb(255, 115, 0);
+}
+.recuperar #recuperarForm{
+    padding: 1.5em;
+    display: flex;
+    flex-wrap: wrap ;
+    max-width: 500px;
+border-radius: 20px;
+border: 2px solid rgba(0, 0, 0.1);
+}
+.recuperar #recuperarForm .recuperar-label{
+    font-weight: bold;
+    width: 100%;
+    padding: 0,8em;
+    margin-bottom: 0.5em;
+    background: #c21500;
+    background: -webkit-linear-gradient(to top, #ffc500, #c21500);  
+    background: linear-gradient(to top, #ffc500, #c21500);
+    background-clip: initial;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    font-family:'Poppins', sans-serif;
+}
+.recuperar #recuperarForm .recuperar-input{
+    color: white;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: rgb(228, 181, 28);
+    background: linear-gradient(rgba(77, 77, 78, 0.60), rgba(77, 77, 78, 0.60));
+}
+.recuperar #recuperarForm .recuperar-input-submit[type='submit']{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 1.5em;
+    color: black;
+    font-family: var(--font-family);
+    transition: var(--transition);
+    background: #c21500; 
+    background: -webkit-linear-gradient(to right, #ffc500, #c21500); 
+    background: linear-gradient(to right, #ffc500, #c21500);
+    width: 100%;
+    padding: 0.8em;
+    border-radius: 9px;
+    border: none;
+    outline-color: rgb(228, 181, 28);
+    cursor: pointer;
+}
+.recuperar #recuperarForm .recuperar-input-submit[type='submit']:active{
+    transform: scale(0.97);
+}
+
+.parrafo{
+    font-size: 1rem;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.parrafo a{
+    text-decoration: none;
+    color: rgb(255, 115, 0);
+    font-weight: bold;
+}
+@media(max-width: 300px){
+    .parrafo {
+
+   
+    font-size: 14px;
+    text-align: center;
+
+    }
+}
+@media (max-width: 280px){
+    .recuperar-titulo{
+			 font-size:1.5rem !important;
+			 }
+
+	  .recuperar{
+			padding: 0px !important;
+		}
+        
+		.recuperar-input{
+			padding: 0.4em !important;
+		}
+
+		.recuperar-input-submit{
+			padding: 0.3em !important;
+		}
+
+    
+} 
+
+    
+ 
+.olviparr{
+    margin-top: 10px;  
+    font-size: 14px;
+    text-decoration: none !important;
+    color:white;
+}
+
