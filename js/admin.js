@@ -139,7 +139,7 @@ function guardarEnLocalStorage(data) {
 	localStorage.setItem('peliculas', JSON.stringify(data));
 }
 
-console.log(peliculas);
+//console.log(peliculas);
 
 class Pelicula {
 	constructor(id, titulo, categoria, img, descripcion, disponible) {
@@ -210,7 +210,6 @@ function crearPelicula(e) {
 		});
 	}
 	const newPelicula = new Pelicula(id, titulo, categoria, img, descripcion);
-
 	peliculas.push(newPelicula);
 
 	localStorage.setItem('peliculas', JSON.stringify(peliculas));
@@ -218,6 +217,9 @@ function crearPelicula(e) {
 	formPeliculas.reset();
 
 	cargarTablaPeliculas();
+
+	// Cerrar el modal usando el atributo data-bs-dismiss
+	document.getElementById('Modal').dispatchEvent(new Event('hidden.bs.modal'));
 }
 
 function mostrarError(mensaje) {
@@ -317,10 +319,10 @@ function borrarPelicula(id) {
 }
 
 /* boton cerrar del modal */
-document.getElementById('btn-cerrar').addEventListener('click', () => {
+/* document.getElementById('btn-cerrar').addEventListener('click', () => {
 	console.log('cerrar');
 	document.querySelector('#editarModal').style.display = 'none';
-});
+}); */
 
 function cambiarImagen(id) {
 	const pelicula = peliculas.find(function (p) {
@@ -344,9 +346,8 @@ function cambiarImagen(id) {
 
 // paginacion
 
-/*
 //variables para la paginación
-let limite = 5;
+/* let limite = 5;
 let desde = 0;
 let paginas = peliculas.length / limite;
 let paginaActiva = 1;
