@@ -258,7 +258,6 @@ function cargarSliders(peliculas) {
 	cardContainers.forEach((item) => {
 		peliculas.map((movie) => {
 			
-			console.log(movie.categoria)
 			if(movie.categoria == "Aventuras"){
 				
 				const card = document.createElement('div');
