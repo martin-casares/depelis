@@ -84,14 +84,15 @@
 							</ul>
 
 							<div class="d-flex justify-content-center">
-								<form action="" class="search-box">
+								<form id="formBuscar" class="search-box">
 									<input
 										type="text"
 										name="search"
 										placeholder="Buscar pelicula"
 										class="search-input"
+										id="busqueda"
 									/>
-									<button type="submit">
+									<button  type="button" id="buscarButton">
 										<i class="fas fa-search"></i>
 									</button>
 								</form>
@@ -255,6 +256,9 @@
 		<!-- js swiper -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+		<!-- js sweetalert -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		  		
 		<!-- Initialize Swiper -->
 		<script>
 			var swiper = new Swiper('.mySwiper', {
