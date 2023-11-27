@@ -1,28 +1,34 @@
 const estrenos = [
 	{
-		img: '../img/p-1.jpg',
-		fecha: 2017,
-		descripcion: 'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies.',
+		img: '../img/p-1.png',
+		fecha: 2012,
+		descripcion:
+			'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies.',
 		directores: ['Anthony Russo', 'Joe Russo'],
 		categoria: ['Action', 'Adventure', 'Drama'],
 
 		rating: 8.4,
 
 		titulo: 'Avengers: End Game',
+
+		enlace: './pages/detallePelicula.html',
 	},
 	{
 		img: '../img/p-2.jpg',
 		fecha: 2014,
-		descripcion: 'Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.',
+		descripcion:
+			'Wade Wilson, tras ser sometido a un cruel experimento científico, adquiere poderes especiales que le convierten en Deadpool. Armado con sus nuevas habilidades y un retorcido sentido del humor tratará de dar caza al hombre que casi destruye su vida.',
 		directores: ['George Boone'],
-		categoria: ['Drama', 'Romance'],
+		categoria: ['Drama', 'Acción'],
 
 		rating: 7.7,
 
-		titulo: 'Fault in our stars',
+		titulo: 'Deadpool',
+
+		enlace: './pages/detallePelicula2.html',
 	},
 	{
-		img: '../img/p-3.jpg',
+		img: '../img/p-3.png',
 		fecha: 1997,
 		descripcion: 'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic',
 		directores: ['James Cameron'],
@@ -31,9 +37,11 @@ const estrenos = [
 		rating: 7.8,
 
 		titulo: 'Titanic',
+
+		enlace: './pages/detallePelicula3.html',
 	},
 	{
-		img: '../img/p-4.jpg',
+		img: '../img/p-4.png',
 		fecha: 2006,
 		descripcion: 'A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.',
 		directores: ['Edward Zwick'],
@@ -42,9 +50,11 @@ const estrenos = [
 		rating: 8,
 
 		titulo: 'Blood Diamond',
+
+		enlace: './pages/Error4042.html',
 	},
 	{
-		img: '../img/p-5.jpg',
+		img: '../img/p-5.png',
 		fecha: 2018,
 		descripcion: 'A faithful wife, tired of standing by her devious husband, is enraged when it becomes clear she has been betrayed.',
 		directoros: ['Tyler Perry'],
@@ -53,6 +63,8 @@ const estrenos = [
 		rating: 5.8,
 
 		titulo: 'Acrimony',
+
+		enlace: './pages/Error4042.html',
 	},
 	{
 		img: '../img/p-6.jpg',
@@ -64,8 +76,12 @@ const estrenos = [
 		rating: 7.7,
 
 		titulo: 'The Social Network',
+
+		enlace: './pages/Error4042.html',
 	},
 ];
+
+
 
 let arrayPeliculas = [
 	{
@@ -257,13 +273,15 @@ function cargarPeliculas(peliculas) {
 		div.classList.add('swiper-slide');
 		div2.classList.add('main-slider-box');
 		div2.innerHTML = `
-			<a href="./pages/error4042.html" class="main-slider-overlay">
+			<a href="${pelicula.enlace}" class="main-slider-overlay">
 				<i class="fas fa-play"></i>
 			</a>
 		`;
 		div3.classList.add('main-slider-img');
 		div3.innerHTML = `
-      <img class="img-fluid" src="${pelicula.img}" alt="${pelicula.titulo}"/>   
+			<a href="../pages/detallePelicula.html"> <img class="img-fluid" src="${pelicula.img}" alt="${pelicula.titulo}"/> </a>
+		
+		
 			<div class="main-slider-text">
 		
 			<span class="quality">Full HD</span>
@@ -315,10 +333,10 @@ function cargarSliders(peliculas) {
       <div class="card-body">
         <h2 class="name">${pelicula.titulo}</h2>
         <h6 class="des">${pelicula.descripcion}</h6>
-        <button class="watchlist-btn text-center">
+        <a href="../pages/detallePelicula.html" class="watchlist-btn btn text-center">
           <i class="fa fa-play mx-1"></i>
-          Ver ahora
-        </button>
+           Ver ahora 
+        </a>
       </div>	 
     `;
 
