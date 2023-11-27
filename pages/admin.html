@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-		/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 		<!-- fontawesome -->
-		<script
-			src="https://kit.fontawesome.com/c8e4d183c2.js"
-			crossorigin="anonymous"
-		></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- icons tabla usuario-->
+		<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+		<!-- icons tabla usuario-->
 		<link rel="stylesheet" href="../css/admin.css" />
 		<link rel="stylesheet" href="../css/nav.css" />
 	</head>
@@ -20,9 +15,7 @@
 			<header class="position-relative w-100">
 				<!-- navbar -->
 				<nav class="navbar navbar-expand-lg navigation">
-					<div
-						class="container-fluid d-flex justify-content-center align-items-center"
-					>
+					<div class="container-fluid d-flex justify-content-center align-items-center">
 						<a class="navbar-brand logo" href="index.html">De<span>.</span>Pelis </a>
 						<button
 							class="navbar-toggler shadow-none border-0"
@@ -30,67 +23,42 @@
 							data-bs-toggle="offcanvas"
 							data-bs-target="#offcanvasDarkNavbar"
 							aria-controls="offcanvasDarkNavbar"
-							aria-label="Toggle navigation"
-						>
+							aria-label="Toggle navigation">
 							<span id="menu-burger">
 								<i class="fas fa-bars"></i>
 							</span>
 						</button>
 						<!-- sidebar -->
-						<div
-							class="sidebar offcanvas offcanvas-start"
-							tabindex="-1"
-							id="offcanvasDarkNavbar"
-							aria-labelledby="offcanvasDarkNavbarLabel"
-						>
+						<div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
 							<!-- sidebar header -->
 							<div class="offcanvas-header border-bottom">
-								<h5 class="offcanvas-title logo" id="offcanvasDarkNavbarLabel">
-									De<span>.</span>Pelis
-								</h5>
-								<button
-									type="button"
-									class="btn-close btn-close-white"
-									data-bs-dismiss="offcanvas"
-									aria-label="Close"
-								></button>
+								<h5 class="offcanvas-title logo" id="offcanvasDarkNavbarLabel">De<span>.</span>Pelis</h5>
+								<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 							</div>
 							<!-- sidebar body -->
 							<div class="offcanvas-body menumi">
 								<ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
 									<li class="nav-item">
-										<a
-											class="nav-link active"
-											aria-current="page"
-											href="../index.html"
-											>Inicio</a
-										>
+										<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
 									</li>
 
 									<li class="nav-item">
-										<a class="nav-link" href="./about.html">Sobre nosotros</a>
+										<a class="nav-link" href="../pages/nosotros.html">Sobre nosotros</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="./contacto.html">Contacto</a>
+										<a class="nav-link" href="../pages/contacto.html">Contacto</a>
 									</li>
 								</ul>
 
 								<div class="d-flex justify-content-center">
 									<form action="" class="search-box">
-										<input
-											type="text"
-											name="search"
-											placeholder="Buscar pelicula"
-											class="search-input"
-										/>
+										<input type="text" name="search" placeholder="Buscar pelicula" class="search-input" />
 										<button type="submit">
 											<i class="fas fa-search"></i>
 										</button>
 									</form>
 								</div>
-								<div class="content-btn d-flex justify-content-center">
-									<a href="./login.html" class="nav-btn pt-2">Iniciar sesion</a>>
-								</div>
+								<div class="content-btn d-flex justify-content-center"><a href="./login.html" class="nav-btn pt-2">Iniciar sesion</a>></div>
 							</div>
 						</div>
 					</div>
@@ -110,11 +78,7 @@
 									</div>
 								</div>
 								<div class="col-6 align-self-end text-end">
-									<img
-										src="../img/admin.png"
-										alt="image"
-										class="img-fluid img-admin rounded"
-									/>
+									<img src="../img/admin.png" alt="image" class="img-fluid img-admin rounded" />
 									<i class="fa fa-suport"></i>
 								</div>
 							</div>
@@ -125,95 +89,54 @@
 
 			<!-- botones modal -->
 			<div class="btns-agregar mb-1">
-				<button
-					type="button"
-					class="btn btn-warning mb-3"
-					data-bs-toggle="modal"
-					data-bs-target="#Modal"
-				>
-					Agregar peliculas
-				</button>
-
+				<button type="button" class="btn btn-warning mb-3" data-bs-toggle="modal" data-bs-target="#Modal">Agregar peliculas</button>
 			</div>
-
 
 			<!-- seccion pestañas peliculas usuarios -->
 			<section class="pestañas">
 				<ul class="nav nav-tabs">
 					<li class="nav-item" role="presentation">
-						<button
-							class="nav-link active"
-							data-bs-toggle="tab"
-							id="usuarios "
-							type="button"
-							data-bs-target="#usuarios"
-							role="tab"
-							aria-controls="usuarios"
-							aria-selected="true"
-						>
+						<button class="nav-link active" data-bs-toggle="tab" id="usuarios " type="button" data-bs-target="#usuarios" role="tab" aria-controls="usuarios" aria-selected="true">
 							Usuarios
 						</button>
 					</li>
 					<li class="nav-item" role="presentation">
-						<button
-							class="nav-link"
-							data-bs-toggle="tab"
-							id="peliculas-tab "
-							type="button"
-							data-bs-target="#peliculas"
-							role="tab"
-							aria-controls="peliculas"
-							aria-selected="false"
-						>
+						<button class="nav-link" data-bs-toggle="tab" id="peliculas-tab " type="button" data-bs-target="#peliculas" role="tab" aria-controls="peliculas" aria-selected="false">
 							Peliculas
 						</button>
 					</li>
 				</ul>
 				<div class="tab-content" id="myTabControl">
 					<!-- pestaña-usuarios -->
-					<div
-						class="tab-pane fade show active"
-						role="tabphane1"
-						id="usuarios"
-						aria-labelledby="usuarios-tab"
-					>
+					<div class="tab-pane fade show active" role="tabphane1" id="usuarios" aria-labelledby="usuarios-tab">
 						<!-- tabla usuarios -->
-							<div>
-								<h5 class="card-title text-warning m-4">Lista de usuarios</h5>
-							</div>
-							
-								<div class="container mt-5 table-responsive">
-									<table class="table table-striped table-dark table-hover border border-warning-subtle">
-										<thead>
-										  <tr>
-											<th scope="col">#ID</th>
-											<th scope="col" class="d-none d-md-table-cell">Nombre</th>
-											<th scope="col">Email</th>
-											<th scope="col">Acciones</th>
-										  </tr>
-										</thead>
-										<tbody id="tablaUsuario" class="table-group-divider">
-										  
-										  
-										</tbody>
-									  </table>						
-								</div>
+						<div>
+							<h5 class="card-title text-warning m-4">Lista de usuarios</h5>
+						</div>
+
+						<div class="container mt-5 table-responsive">
+							<table class="table table-striped table-dark table-hover border border-warning-subtle">
+								<thead>
+									<tr>
+										<th scope="col">#ID</th>
+										<th scope="col" class="d-none d-md-table-cell">Nombre</th>
+										<th scope="col">Email</th>
+										<th scope="col">Acciones</th>
+									</tr>
+								</thead>
+								<tbody id="tablaUsuario" class="table-group-divider"></tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 				<!-- pestaña-peliculas -->
-				<div>	
-					<div
-						class="tab-pane fade"
-						role="tabphane1"
-						id="peliculas"
-						aria-labelledby="peliculas-tab"
-					>
+				<div>
+					<div class="tab-pane fade" role="tabphane1" id="peliculas" aria-labelledby="peliculas-tab">
 						<!-- tabla peliculas -->
 						<div>
 							<h5 class="card-title text-warning m-4">Lista de peliculas</h5>
 						</div>
 						<div class="card border-0 bg-dark" id="tabla-peliculas">
-							
 							<table class="table table-striped table-dark table-hover border border-warning-subtle">
 								<thead>
 									<tr>
@@ -228,95 +151,44 @@
 							</table>
 						</div>
 					</div>
-
 				</div>
 			</section>
 
 			<!-- modal crear peliculas -->
-			<div
-				class="modal"
-				id="Modal"
-				tabindex="-1"
-				aria-labelledby="ModalLabel"
-				aria-hidden="true"
-			>
+			<div class="modal" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h1 class="modal-title fs-5 f-white" id="ModalLabel">
-								Nueva Pelicula
-							</h1>
+							<h1 class="modal-title fs-5 f-white" id="ModalLabel">Nueva Pelicula</h1>
 
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="modal"
-								aria-label="Close"
-							></button>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
 							<p id="formError"></p>
 							<form class="formPeliculas">
 								<div class="form-group mb-3">
 									<label for="titulo">Titulo</label>
-									<input
-										type="text"
-										name="titulo"
-										class="form-control"
-										id="titulo"
-										placeholder="Titulo"
-										maxlength="40"
-									/>
+									<input type="text" name="titulo" class="form-control" id="titulo" placeholder="Titulo" maxlength="40" />
 								</div>
 
 								<div class="form-group mb-3">
 									<label for="categoria">Categoria</label>
-									<input
-										type="text"
-										name="categoria"
-										class="form-control"
-										id="categoria"
-										placeholder="Categoria"
-										maxlength="40"
-									/>
+									<input type="text" name="categoria" class="form-control" id="categoria" placeholder="Categoria" maxlength="40" />
 								</div>
 
 								<div class="form-group mb-3">
 									<label for="img">Imagen</label>
-									<input
-										type="text"
-										name="imagen"
-										class="form-control"
-										id="img"
-										placeholder="URL de la imagen"
-									/>
+									<input type="text" name="imagen" class="form-control" id="img" placeholder="URL de la imagen" />
 								</div>
 
 								<div class="form-group mb-3">
 									<label for="descripcion">Descripcion</label>
-									<input
-										type="text"
-										name="descripcion"
-										class="form-control"
-										id="descripcion"
-										placeholder="Descripcion"
-										maxlength="120"
-									/>
+									<input type="text" name="descripcion" class="form-control" id="descripcion" placeholder="Descripcion" maxlength="120" />
 								</div>
 
 								<div class="modal-footer">
-									<button type="button" class="btn btn-secondary" id="btn-guardar">
-										Cerrar
-									</button>
-									<button
-										type="submit"
-										class="btn btn-primary"
-										data-bs-dismiss="modal"
-										aria-label="Close"
-										id="submit"
-									>
-										Guardar
-									</button>
+									<button type="button" class="btn btn-secondary" id="btn-guardar">Cerrar</button>
+									<button type="submit" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close" id="submit">Guardar</button>
 								</div>
 							</form>
 						</div>
@@ -325,84 +197,38 @@
 			</div>
 
 			<!-- mi  modal edirar peliculas -->
-			<div
-				class="modal"
-				id="editarModal"
-				tabindex="-1"
-				aria-labelledby="ModalLabel"
-				aria-hidden="true"
-			>
+			<div class="modal" id="editarModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header">
-							<h1 class="modal-title fs-5 f-white" id="ModalLabel">
-								Nueva Pelicula
-							</h1>
-							<button
-								type="button"
-								class="btn-close"
-								data-bs-dismiss="modal"
-								aria-label="Close"
-							></button>
+							<h1 class="modal-title fs-5 f-white" id="ModalLabel">Nueva Pelicula</h1>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div class="modal-body">
 							<form id="formEditarPeliculas">
 								<div class="form-group mb-3">
 									<label for="editarTitulo">Titulo</label>
-									<input
-										type="text"
-										name="editarTitulo"
-										class="form-control"
-										id="editarTitulo"
-										placeholder="Titulo"
-									/>
+									<input type="text" name="editarTitulo" class="form-control" id="editarTitulo" placeholder="Titulo" />
 								</div>
 
 								<div class="form-group mb-3">
 									<label for="editarCategoria">Categoria</label>
-									<input
-										type="text"
-										name="categoria"
-										class="form-control"
-										id="editarCategoria"
-										placeholder="Categoria"
-									/>
+									<input type="text" name="categoria" class="form-control" id="editarCategoria" placeholder="Categoria" />
 								</div>
 
 								<div class="form-group mb-3">
 									<label for="editarImagen">Imagen</label>
-									<input
-										type="text"
-										name="editarImagen"
-										class="form-control"
-										id="editarImagen"
-										placeholder="URL de la imagen"
-									/>
+									<input type="text" name="editarImagen" class="form-control" id="editarImagen" placeholder="URL de la imagen" />
 								</div>
 
 								<div class="form-group mb-3">
 									<label for="">Descripcion</label>
-									<input
-										type="text"
-										name="editarDescripcion"
-										class="form-control"
-										id="editarDescripcion"
-										placeholder="Descripcion"
-									/>
+									<input type="text" name="editarDescripcion" class="form-control" id="editarDescripcion" placeholder="Descripcion" />
 								</div>
 
 								<div class="modal-footer">
-									<button
-										type="button"
-										class="btn btn-secondary"
-										data-bs-dismiss="modal"
-										id="btn-cerrar"
-									>
-										Cerrar
-									</button>
-									<button type="submit" class="btn btn-primary" id="submit">
-										Guardar
-									</button>
+									<button type="button" class="btn btn-secondary" data-bs-dismiss="modal" id="btn-cerrar">Cerrar</button>
+									<button type="submit" class="btn btn-primary" id="submit">Guardar</button>
 								</div>
 							</form>
 						</div>
@@ -414,43 +240,28 @@
 		<!-- Modal Editar Usuario -->
 		<div id="editUsuarioModal" class="modal my-auto mx-auto">
 			<!-- Contenido del modal -->
-			
-      <div class="modal-content w-50">
-				
+
+			<div class="modal-content w-50">
 				<form id="formUsuariosEditar">
 					<div class="modal-body" id="bodyModificaModal">
 						<div class="form-group">
 							<label for="nombreEditarUsuario">Usuario</label>
-							<input
-								type="text"
-								class="form-control"
-								id="nombreEditarUsuario"
-								value=""
-								autocomplete="off"
-							/>
+							<input type="text" class="form-control" id="nombreEditarUsuario" value="" autocomplete="off" />
 						</div>
-						
+
 						<div class="form-row">
 							<div class="col">
 								<label for="emailEditarUsuario">Email</label>
-								<input
-									type="email"
-									class="form-control"
-									id="emailEditarUsuario"
-									min="0"
-									autocomplete="off"
-								/>
+								<input type="email" class="form-control" id="emailEditarUsuario" min="0" autocomplete="off" />
 							</div>
 						</div>
 					</div>
 					<div class="modal-footer d-flex justify-content-center">
-						<button type="button" class="btn btn-secondary" id="cerrarModal">
-							Cancelar
-						</button>
+						<button type="button" class="btn btn-secondary" id="cerrarModal">Cancelar</button>
 						<button type="submit" class="btn btn-warning">Guardar</button>
 					</div>
 				</form>
-        <p id="formErrorModalEditUser" class="m-3"></p>
+				<p id="formErrorModalEditUser" class="m-3"></p>
 			</div>
 		</div>
 
