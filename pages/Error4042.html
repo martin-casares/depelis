@@ -62,7 +62,7 @@
 									<a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="../pages/detallePelicula.html">peliculas</a>
+									<a class="nav-link" href="../pages/detallePelicula.html">Peliculas</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="../pages/nosotros.html">Sobre nosotros</a>
@@ -73,9 +73,9 @@
 							</ul>
 
 							<div class="d-flex justify-content-center">
-								<form action="" class="search-box">
-									<input type="text" name="search" placeholder="Buscar pelicula" class="search-input" />
-									<button type="submit">
+								<form id="formBuscar" class="search-box">
+									<input type="text" name="search" placeholder="Buscar pelicula" class="search-input" id="busqueda" />
+									<button type="button" id="buscarButton">
 										<i class="fas fa-search"></i>
 									</button>
 								</form>
@@ -125,5 +125,9 @@
 				</div>
 			</div>
 		</footer>
+		<!-- sweetalert -->
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+		<!-- js  -->
+		<script src="../js/Error4042.js"></script>
 	</body>
 </html>
