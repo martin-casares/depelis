@@ -94,13 +94,28 @@
 							</div>
 
 							<div class="mb-3 row">
-								<label for="contactoEmail" class="form-label">Direccion de Email</label>
-								<input type="email" class="form-control" id="contactoEmail" placeholder="Nombre@ejemplo.com" required />
+								<label for="contactoEmail" class="form-label"
+									>Direccion de Email</label
+								>
+								<input
+									type="email"
+									class="form-control"
+									id="contactoEmail"
+									placeholder="Nombre@ejemplo.com"
+									required
+									maxlength="30"
+								/>
 							</div>
 
 							<div class="mb-3 row">
 								<label for="contactoTextArea" class="form-label">Mensaje</label>
-								<textarea class="form-control" rows="3" id="contactoTextArea" required maxlength="150"></textarea>
+								<textarea
+									class="form-control"
+									rows="3"
+									id="contactoTextArea"
+									required
+									maxlength="200"
+								></textarea>
 							</div>
 							<div class="d-flex justify-content-center row p-1">
 								<button type="submit" class="btn p-1">Enviar</button>
@@ -110,6 +125,7 @@
 					</div>
 				</div>
 			</section>
+			<a href="mailto:petronipablo.tec@gmail.com" id="botonMailTo"></a>
 		</main>
 
 		<footer class="bg-black mt-5" id="footerContacto">

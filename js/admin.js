@@ -321,6 +321,13 @@ function editarPelicula(e) {
 	cargarTablaPeliculas();
 }
 
+cerrarModalPelicula.addEventListener("click", function () {
+	// guardo el modal en variable
+	let editarModal = document.getElementById("editarModal");
+	
+	editarModal.style.display = "none"; 
+  });
+
 function borrarPelicula(id) {
 	Swal.fire({
 		title: '¿Estás seguro?',
@@ -436,12 +443,12 @@ const formUsuariosEditar = document.querySelector('#formUsuariosEditar');
 //ejecutar evento submit de editar usuario
 formUsuariosEditar.addEventListener('submit', editarUsuarios);
 
-//boton cancelar del modal
-cerrarModal.addEventListener('click', function () {
-	// guardo el modal en variable
-	let editUsuarioModal = document.getElementById('editUsuarioModal');
-
-	editUsuarioModal.style.display = 'none';
+//boton cancelar del modal Usuario
+cerrarModal.addEventListener("click", function () {
+  // guardo el modal en variable
+  let editUsuarioModal = document.getElementById("editUsuarioModal");
+  
+  editUsuarioModal.style.display = "none"; 
 });
 
 function cargarTablaUsuario() {
