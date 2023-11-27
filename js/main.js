@@ -53,7 +53,7 @@ const estrenos = [
 
 		titulo: 'Blood Diamond',
 
-		enlace: './pages/detallePelicula4.html',
+		enlace: './pages/Error4042.html',
 	},
 	{
 		img: '../img/p-5.png',
@@ -67,7 +67,7 @@ const estrenos = [
 
 		titulo: 'Acrimony',
 
-		enlace: './pages/detallePelicula5.html',
+		enlace: './pages/Error4042.html',
 	},
 	{
 		img: '../img/p-6.jpg',
@@ -81,7 +81,7 @@ const estrenos = [
 
 		titulo: 'The Social Network',
 
-		enlace: './pages/detallePelicula6.html',
+		enlace: './pages/Error4042.html',
 	},
 ];
 
