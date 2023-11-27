@@ -49,16 +49,15 @@
 									<a class="nav-link active" aria-current="page" href="">Inicio</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="#peliculas">peliculas</a>
+									<a class="nav-link" href="./pages/detallePelicula.html">Peliculas</a>
 								</li>
 								<li class="nav-item">
-									<a class="nav-link" href="./pages/about.html">Sobre nosotros</a>
+									<a class="nav-link" href="./pages/nosotros.html">Sobre nosotros</a>
 								</li>
 								<li class="nav-item">
 									<a class="nav-link" href="./pages/contacto.html">Contacto</a>
 								</li>
 							</ul>
-
 							<div class="d-flex justify-content-center">
 								<form id="formBuscar" class="search-box">
 									<input type="text" name="search" placeholder="Buscar pelicula" class="search-input" id="busqueda" />
@@ -68,7 +67,7 @@
 								</form>
 							</div>
 							<div class="content-btn d-flex justify-content-center">
-								<a href="./pages/login.html" class="nav-btn pt-2">Iniciar sesion</a>
+								<a href="../pages/login.html" class="nav-btn pt-2">Iniciar sesion</a>
 							</div>
 						</div>
 					</div>
@@ -79,15 +78,17 @@
 			<section class="cabecera h-75 d-flex flex-column">
 				<div class="container d-flex-column justify-content-start w-60 m-0">
 					<h1 class="cabecera-titulo text-white text-lg-start">Pelicula destacada</h1>
-					<p class="cabecera-parrafo1 text-white text-lg-start">Descipcion de pelicula descada</p>
+					<p class="cabecera-parrafo1 text-white text-lg-start">Descripcion de pelicula descada</p>
 					<p class="cabecera-parrafo2 text-white text-start">
 						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente sed culpa qui obcaecati ea eum a doloribus, quas animi! Dolorum.
 					</p>
 					<div class="ver">
-						<button type="button" class="red-btn fw-semibold">
-							<i class="fas fa-play mx-1"></i>
-							Ver ahora
-						</button>
+						<a href="./pages/error404.html"
+							><button type="button" class="red-btn fw-semibold">
+								<i class="fas fa-play mx-1"></i>
+								Ver ahora
+							</button></a
+						>
 					</div>
 				</div>
 			</section>
@@ -117,36 +118,34 @@
 					<div class="card-container slider1"></div>
 					<div class="slider-botones">
 						<div class="pre-btn" id="boton-izq" onclick="scrollIzquierda()">
-							<img src="img/pre.png" alt="" />
+							<img src="./img/pre.png" alt="" />
 						</div>
 						<div class="nxt-btn" id="boton-nxt" onclick="scrollDerecha()">
-							<img src="img/nxt.png" alt="" />
+							<img src="./img/nxt.png" alt="" />
 						</div>
 					</div>
 				</div>
-
 				<h1 class="titulo">Terror</h1>
 				<div class="lista-peliculas">
 					<div class="card-container slider2"></div>
 					<div class="slider-botones">
 						<div class="pre-btn" id="boton-izq" onclick="scrollIzquierda2()">
-							<img src="img/pre.png" alt="" />
+							<img src="./img/pre.png" alt="" />
 						</div>
 						<div class="nxt-btn" id="boton-nxt" onclick="scrollDerecha2()">
-							<img src="img/nxt.png" alt="" />
+							<img src="./img/nxt.png" alt="" />
 						</div>
 					</div>
 				</div>
-
 				<h1 class="titulo">Accion</h1>
 				<div class="lista-peliculas">
 					<div class="card-container slider3"></div>
 					<div class="slider-botones">
 						<div class="pre-btn" id="boton-izq" onclick="scrollIzquierda3()">
-							<img src="img/pre.png" alt="" />
+							<img src="./img/pre.png" alt="" />
 						</div>
 						<div class="nxt-btn" id="boton-nxt" onclick="scrollDerecha3()">
-							<img src="img/nxt.png" alt="" />
+							<img src="./img/nxt.png" alt="" />
 						</div>
 					</div>
 				</div>
@@ -167,7 +166,7 @@
 							<a href="index.html" class="nav-link px-3 text-body-secondary text-light fw-bolder">Home</a>
 						</li>
 						<li class="text-deg nav-item">
-							<a href="./pages/aboutus.html" class="nav-link px-3 text-body-secondary text-light fw-bolder">Nosotros</a>
+							<a href="./pages/nosotros.html" class="nav-link px-3 text-body-secondary text-light fw-bolder">Nosotros</a>
 						</li>
 						<li class="text-deg nav-item">
 							<a href="./pages/contacto.html" class="nav-link px-3 text-body-secondary text-light fw-bolder">Contacto</a>

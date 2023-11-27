@@ -2,8 +2,7 @@ let arrayPeliculas = [
 	{
 		id: '1233',
 		img: '../img/post-1.jpg',
-		descripcion:
-			'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies',
+		descripcion: 'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies',
 		categoria: 'Aventuras',
 		disponible: 'si',
 		titulo: 'Avengers: End Game',
@@ -12,8 +11,7 @@ let arrayPeliculas = [
 	{
 		id: '1234',
 		img: '../img/post-2.jpg	',
-		descripcion:
-			'Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.',
+		descripcion: 'Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.',
 		categoria: 'Aventuras',
 		disponible: 'no',
 		titulo: 'Fault in our stars',
@@ -22,8 +20,7 @@ let arrayPeliculas = [
 	{
 		id: '1235',
 		img: 'https://hips.hearstapps.com/hmg-prod/images/the-hills-have-eyes-608777333-large-6530e777c3e68.jpg?crop=0.995xw:0.956xh;0,0.0436xh&resize=980:*',
-		descripcion:
-			'Al adentrarse en una zona desértica de acceso restringido donde el Gobierno está experimentando,a auténtica pesadilla.',
+		descripcion: 'Al adentrarse en una zona desértica de acceso restringido donde el Gobierno está experimentando,a auténtica pesadilla.',
 		categoria: 'Terror',
 		disponible: 'si',
 		titulo: 'The hills have eyes',
@@ -32,8 +29,7 @@ let arrayPeliculas = [
 	{
 		id: '1236',
 		img: '../img/post-4.jpg',
-		descripcion:
-			'A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.',
+		descripcion: 'A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.',
 		categoria: 'Aventuras',
 		disponible: 'si',
 		titulo: 'Blood Diamond',
@@ -41,8 +37,7 @@ let arrayPeliculas = [
 	{
 		id: '1237',
 		img: 'https://hips.hearstapps.com/hmg-prod/images/martyrs-833344715-large-6530e80201999.jpg?crop=0.9522012578616352xw:1xh;center,top&resize=980:*',
-		descripcion:
-			'Mártires cuenta la historia de Lucie, una niña desaparecida en Francia en 1969 que es  a su estado, es incapaz de contar nada de lo sucedido..',
+		descripcion: 'Mártires cuenta la historia de Lucie, una niña desaparecida en Francia en 1969 que es  a su estado, es incapaz de contar nada de lo sucedido..',
 		categoria: 'Terror',
 		disponible: 'si',
 		titulo: 'Martires',
@@ -51,8 +46,7 @@ let arrayPeliculas = [
 	{
 		id: '1238',
 		img: 'https://hips.hearstapps.com/hmg-prod/images/28-days-later-469569758-large-6530e6afa5791.jpg?crop=0.9916666666666667xw:1xh;center,top&resize=980:*',
-		descripcion:
-			'Tras la propagación de un virus letal que acaba con la vida de miles de personas en Gran Bretaña, unos  Londres.',
+		descripcion: 'Tras la propagación de un virus letal que acaba con la vida de miles de personas en Gran Bretaña, unos  Londres.',
 		disponible: 'si',
 		categoria: 'Terror',
 		titulo: '28 dias despues',
@@ -60,8 +54,7 @@ let arrayPeliculas = [
 	{
 		id: '1239',
 		img: 'https://hips.hearstapps.com/hmg-prod/images/the-descent-396561570-large-6530e57274f5a.jpg?crop=0.9434464404524285xw:1xh;center,top&resize=980:*',
-		descripcion:
-			'Cuando un grupo de seis amigas se reúne para emprender una expedición espeleológica, jamás imaginará que su vida',
+		descripcion: 'Cuando un grupo de seis amigas se reúne para emprender una expedición espeleológica, jamás imaginará que su vida',
 		disponible: 'si',
 		categoria: 'Terror',
 		titulo: 'The descent',
@@ -70,8 +63,7 @@ let arrayPeliculas = [
 	{
 		id: '1240',
 		img: 'https://www.pequeocio.com/wp-content/uploads/2020/01/jungle-cruise-pelicula-2020-385x550.jpg.webp',
-		descripcion:
-			'Frank es un capitán de barco que lleva por la selva a la científica Lily Houghton y a su hermano curativos.',
+		descripcion: 'Frank es un capitán de barco que lleva por la selva a la científica Lily Houghton y a su hermano curativos.',
 		disponible: 'si',
 		categoria: 'Aventuras',
 		titulo: 'The Jungle Cruise',
@@ -79,8 +71,7 @@ let arrayPeliculas = [
 	{
 		id: '1241',
 		img: 'https://www.pequeocio.com/wp-content/uploads/2019/12/soul-cartel-pelicula-disney-pixar-372x550.jpeg.webp',
-		descripcion:
-			'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
+		descripcion: 'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
 		disponible: 'si',
 		categoria: 'Aventuras',
 		titulo: 'Soul',
@@ -88,8 +79,7 @@ let arrayPeliculas = [
 	{
 		id: '1242',
 		img: 'https://cdn.atomix.vg/wp-content/uploads/2015/05/atomix_movies_mad_max_fury_road_furia_en_el_camino_pelicula_post_apocaliptica_george_miller_tom_hardy_charlize_teron_warner_bros_recomendacion_cine_ver_cartelera.png',
-		descripcion:
-			'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
+		descripcion: 'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
 		disponible: 'si',
 		categoria: 'Accion',
 		titulo: 'Mad Max',
@@ -97,8 +87,7 @@ let arrayPeliculas = [
 	{
 		id: '1243',
 		img: 'https://es.web.img3.acsta.net/c_310_420/pictures/20/01/09/15/10/0234685.jpg',
-		descripcion:
-			'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
+		descripcion: 'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
 		disponible: 'si',
 		categoria: 'Accion',
 		titulo: '1917',
@@ -106,8 +95,7 @@ let arrayPeliculas = [
 	{
 		id: '1244',
 		img: 'https://img.asmedia.epimg.net/resizer/DFTtArUNaW419i0UdsN_OkIvDmU=/736x0/cloudfront-eu-central-1.images.arcpublishing.com/diarioas/ZUZCKWWLVZN37ACDYH5SJJX4TM.jpg',
-		descripcion:
-			'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
+		descripcion: 'Soul es la nueva película de Pixar, que nos narra la historia de Joe Gardnet, un maestro de música de secundaria z.',
 		disponible: 'si',
 		categoria: 'Accion',
 		titulo: '1917',
@@ -120,6 +108,52 @@ const formEditarPeliculas = document.querySelector('#formEditarPeliculas');
 const formError = document.querySelector('#formError');
 formPeliculas.addEventListener('submit', crearPelicula);
 formEditarPeliculas.addEventListener('submit', editarPelicula);
+
+/* funcion busqueda */
+const buscarButton = document.getElementById('buscarButton');
+
+buscarButton.addEventListener('click', buscarPeli);
+
+let peliculastorage = JSON.parse(localStorage.getItem('peliculas'));
+
+function buscarPeli(e) {
+	e.preventDefault();
+
+	const inputBusqueda = document.getElementById('busqueda').value.toLowerCase();
+
+	const peliculasFiltradas = peliculastorage.filter((pelicula) => pelicula.titulo.toLowerCase().includes(inputBusqueda));
+
+	const peliculaEncontrada = JSON.stringify(peliculasFiltradas);
+	if (peliculasFiltradas != '') {
+		const titulos = peliculasFiltradas.map((pelicula) => pelicula.titulo).join(', ');
+		const imagen = peliculasFiltradas.map((pelicula) => pelicula.img).join(', ');
+		const descripcion = peliculasFiltradas.map((pelicula) => pelicula.descripcion).join(', ');
+		Swal.fire({
+			title: `${titulos}`,
+			text: `${descripcion}`,
+			imageUrl: `${imagen}`,
+			imageWidth: 400,
+			imageHeight: 200,
+			imageAlt: 'imagen pelicula',
+			showCancelButton: true,
+			confirmButtonColor: '#3085d6',
+			cancelButtonColor: '#d33',
+			confirmButtonText: 'Ver mas!',
+			cancelButtonText: 'Volver',
+		}).then((result) => {
+			if (result.isConfirmed) {
+				window.location.href = '../pages/error4042.html';
+			}
+		});
+	} else {
+		Swal.fire({
+			icon: 'error',
+			title: 'Oops...',
+			text: 'Pelicula no encontrada!',
+		});
+		return;
+	}
+}
 
 function obtenerDatos() {
 	const storedData = localStorage.getItem('peliculas');
@@ -224,27 +258,11 @@ function crearPelicula(e) {
 
 function mostrarError(mensaje) {
 	formError.textContent = mensaje;
-	formError.classList.add(
-		'text-white',
-		'bg-danger',
-		'w-15',
-		'fs-5',
-		'm-1',
-		'p-1',
-		'text-center'
-	);
+	formError.classList.add('text-white', 'bg-danger', 'w-15', 'fs-5', 'm-1', 'p-1', 'text-center');
 
 	setTimeout(() => {
 		formError.textContent = '';
-		formError.classList.remove(
-			'text-white',
-			'bg-danger',
-			'w-15',
-			'fs-5',
-			'm-1',
-			'p-1',
-			'text-center'
-		);
+		formError.classList.remove('text-white', 'bg-danger', 'w-15', 'fs-5', 'm-1', 'p-1', 'text-center');
 	}, 5000);
 }
 
@@ -272,12 +290,7 @@ function editarPelicula(e) {
 
 	/* falta validar  */
 
-	if (
-		tituloEditar === '' ||
-		!categoriaEditar ||
-		!imagenEditar ||
-		!descripcionEditar
-	) {
+	if (tituloEditar === '' || !categoriaEditar || !imagenEditar || !descripcionEditar) {
 		mostrarError('Todos los campos son requeridos');
 		return;
 	} else if (tituloEditar.length < 3) {
@@ -317,25 +330,25 @@ cerrarModalPelicula.addEventListener("click", function () {
 
 function borrarPelicula(id) {
 	Swal.fire({
-		title: "¿Estás seguro?",
-		text: "Estas a punto de eliminar esta pelicula",
-		icon: "warning",
+		title: '¿Estás seguro?',
+		text: 'Estas a punto de eliminar esta pelicula',
+		icon: 'warning',
 		showCancelButton: true,
-		confirmButtonColor: "#d33",
-		cancelButtonColor: "#3085d6",
-		confirmButtonText: "Sí, eliminar",
-		cancelButtonText: "Cancelar",
-	  }).then((result) => {
+		confirmButtonColor: '#d33',
+		cancelButtonColor: '#3085d6',
+		confirmButtonText: 'Sí, eliminar',
+		cancelButtonText: 'Cancelar',
+	}).then((result) => {
 		if (result.isConfirmed) {
-	peliculas = peliculas.filter(function (pelicula) {
-		return pelicula.id !== id;
-	});
+			peliculas = peliculas.filter(function (pelicula) {
+				return pelicula.id !== id;
+			});
 
-	localStorage.setItem('peliculas', JSON.stringify(peliculas));
+			localStorage.setItem('peliculas', JSON.stringify(peliculas));
 
-	cargarTablaPeliculas();
-	Swal.fire("Eliminada", "La pelicula fue eliminada con exito", "success");
-	}
+			cargarTablaPeliculas();
+			Swal.fire('Eliminada', 'La pelicula fue eliminada con exito', 'success');
+		}
 	});
 }
 
@@ -354,8 +367,7 @@ function cambiarImagen(id) {
 	document.getElementById('like').classList.add('text-warning');
 
 	/* cambiar imagen de cabecera */
-	const header = (document.querySelector('header').style.backgroundImage =
-		'url(${pelicula.img})');
+	const header = (document.querySelector('header').style.backgroundImage = 'url(${pelicula.img})');
 	console.log(header);
 
 	/* header.classList.add(''); */
@@ -425,9 +437,9 @@ window.previusPage = () => {
 //
 // Tabla usuarios JS
 
-const tablaUsuario = document.querySelector("#tablaUsuario");
-let usuarios = JSON.parse(localStorage.getItem("usuarios"));
-const formUsuariosEditar = document.querySelector("#formUsuariosEditar");
+const tablaUsuario = document.querySelector('#tablaUsuario');
+let usuarios = JSON.parse(localStorage.getItem('usuarios'));
+const formUsuariosEditar = document.querySelector('#formUsuariosEditar');
 //ejecutar evento submit de editar usuario
 formUsuariosEditar.addEventListener('submit', editarUsuarios);
 
@@ -439,122 +451,114 @@ cerrarModal.addEventListener("click", function () {
   editUsuarioModal.style.display = "none"; 
 });
 
-
 function cargarTablaUsuario() {
+	tablaUsuario.innerHTML = ``;
+	usuarios.map(function (usuario) {
+		let tr = document.createElement('tr');
 
-    tablaUsuario.innerHTML = ``;
-    usuarios.map(function (usuario) {
-      let tr = document.createElement("tr");
-  
-      tr.innerHTML = `
+		tr.innerHTML = `
                   <td class="align-middle">${usuario.id}</td>
                   <td class="align-middle d-none d-md-table-cell">${usuario.nombre}</td>
                   <td class="align-middle">${usuario.email}</td>
                   <td>
                     <button class="btn" id="botonEdit" onclick="mostrarEditarUsuarioModal(${usuario.id})"><i class="fa-solid fa-user-pen"></i></button>
                     <button class="btn" id="botonEdit2" onclick="borrarUsuario(${usuario.id})"><i class="fa-solid fa-user-xmark"></i></button>
-                  </td>`
-  
-      tablaUsuario.appendChild(tr);
-    });
+                  </td>`;
+
+		tablaUsuario.appendChild(tr);
+	});
 }
-    cargarTablaUsuario();
+cargarTablaUsuario();
 
+function mostrarEditarUsuarioModal(id) {
+	const usuario = usuarios.find(function (user) {
+		return user.id === id;
+	});
 
-function mostrarEditarUsuarioModal(id){
-  const usuario = usuarios.find(function (user){
-    return user.id === id;
-  });
-  
-  //traemos los inputs del formulario editar y remplazamos su valor por los que ya tiene el usuario
-  document.querySelector("#nombreEditarUsuario").value = usuario.nombre;
-  document.querySelector("#emailEditarUsuario").value = usuario.email;
+	//traemos los inputs del formulario editar y remplazamos su valor por los que ya tiene el usuario
+	document.querySelector('#nombreEditarUsuario').value = usuario.nombre;
+	document.querySelector('#emailEditarUsuario').value = usuario.email;
 
-  //crear atributo id al form
-  formUsuariosEditar.setAttribute("data-id", id);
+	//crear atributo id al form
+	formUsuariosEditar.setAttribute('data-id', id);
 
-  //mostrar modal
-  document.querySelector("#editUsuarioModal").style.display = "block";
+	//mostrar modal
+	document.querySelector('#editUsuarioModal').style.display = 'block';
 }
 
-function editarUsuarios(e){
-  e.preventDefault();
-  
-  const nombreEditarUsuario = document.querySelector('#nombreEditarUsuario').value;
+function editarUsuarios(e) {
+	e.preventDefault();
+
+	const nombreEditarUsuario = document.querySelector('#nombreEditarUsuario').value;
 	const emailEditarUsuario = document.querySelector('#emailEditarUsuario').value;
-  //expresion regular para validar email
-    const validarEmail = /^[\w+.-]+@\w+([.-]?\w+)*(\.\w{2,})+$/;
-    const resultadoValidacionEmail = validarEmail.test(emailEditarUsuario);
-  //expresion regular para validar nombre
-    const validarNombre = /^[a-zA-Z]+$/;
-    const resultadoValidacionNombre = validarNombre.test(nombreEditarUsuario);
+	//expresion regular para validar email
+	const validarEmail = /^[\w+.-]+@\w+([.-]?\w+)*(\.\w{2,})+$/;
+	const resultadoValidacionEmail = validarEmail.test(emailEditarUsuario);
+	//expresion regular para validar nombre
+	const validarNombre = /^[a-zA-Z]+$/;
+	const resultadoValidacionNombre = validarNombre.test(nombreEditarUsuario);
 
-  //validaciones
-    if(nombreEditarUsuario === "" || emailEditarUsuario === ""){
-      mostrarError("*Todos los campos son obligatorios*"); 
-      return;
-      }else if (!resultadoValidacionEmail){
-      mostrarError("*Ingrese un Email valido*"); return;
-      }else if (!resultadoValidacionNombre){
-      mostrarError("*Ingrese un nombre que no contenga signos, numeros ni caracteres especiales*"); 
-      return;
-      }else { Swal.fire({
-        icon: "success",
-        text: "Editado exitosamente!",
-      });
-    }
+	//validaciones
+	if (nombreEditarUsuario === '' || emailEditarUsuario === '') {
+		mostrarError('*Todos los campos son obligatorios*');
+		return;
+	} else if (!resultadoValidacionEmail) {
+		mostrarError('*Ingrese un Email valido*');
+		return;
+	} else if (!resultadoValidacionNombre) {
+		mostrarError('*Ingrese un nombre que no contenga signos, numeros ni caracteres especiales*');
+		return;
+	} else {
+		Swal.fire({
+			icon: 'success',
+			text: 'Editado exitosamente!',
+		});
+	}
 
-    //obtener el ID del usuario que estamos editando
+	//obtener el ID del usuario que estamos editando
 	const id = formUsuariosEditar.getAttribute('data-id');
-  
-  const usuarioIndex = usuarios.findIndex(function(usuario) {
-    return usuario.id === parseInt(id);
-  });
 
-   usuarios[usuarioIndex].nombre = nombreEditarUsuario;
-   usuarios[usuarioIndex].email = emailEditarUsuario;
+	const usuarioIndex = usuarios.findIndex(function (usuario) {
+		return usuario.id === parseInt(id);
+	});
 
-  document.querySelector('#editUsuarioModal').style.display = "none";
+	usuarios[usuarioIndex].nombre = nombreEditarUsuario;
+	usuarios[usuarioIndex].email = emailEditarUsuario;
 
-  localStorage.setItem('usuarios', JSON.stringify(usuarios));
-  cargarTablaUsuario();
-	
+	document.querySelector('#editUsuarioModal').style.display = 'none';
+
+	localStorage.setItem('usuarios', JSON.stringify(usuarios));
+	cargarTablaUsuario();
 }
-
-
-
 
 function mostrarError(mensaje) {
+	formErrorModalEditUser.textContent = mensaje;
 
-  formErrorModalEditUser.textContent = mensaje;
-
-  setTimeout(() => {
-    formErrorModalEditUser.textContent = "";
-  }, 3000);
+	setTimeout(() => {
+		formErrorModalEditUser.textContent = '';
+	}, 3000);
 }
 
-
-
-function borrarUsuario(id){
+function borrarUsuario(id) {
 	Swal.fire({
-		title: "¿Estás seguro?",
-		text: "Estas a punto de eliminar un usuario",
-		icon: "warning",
+		title: '¿Estás seguro?',
+		text: 'Estas a punto de eliminar un usuario',
+		icon: 'warning',
 		showCancelButton: true,
-		confirmButtonColor: "#d33",
-		cancelButtonColor: "#3085d6",
-		confirmButtonText: "Sí, borrarlo",
-		cancelButtonText: "Cancelar",
-	  }).then((result) => {
+		confirmButtonColor: '#d33',
+		cancelButtonColor: '#3085d6',
+		confirmButtonText: 'Sí, borrarlo',
+		cancelButtonText: 'Cancelar',
+	}).then((result) => {
 		if (result.isConfirmed) {
-		  // Filtrar
-		usuarios = usuarios.filter(function (usuario) {
-		return usuario.id !== id;
+			// Filtrar
+			usuarios = usuarios.filter(function (usuario) {
+				return usuario.id !== id;
+			});
+			localStorage.setItem('usuarios', JSON.stringify(usuarios));
+
+			cargarTablaUsuario();
+			Swal.fire('Eliminado', 'El usuario fue eliminado con exito', 'success');
+		}
 	});
-    localStorage.setItem("usuarios", JSON.stringify(usuarios));
-  
-    cargarTablaUsuario();
-	Swal.fire("Eliminado", "El usuario fue eliminado con exito", "success");
-	}
-});
 }
