@@ -14,16 +14,16 @@ const estrenos = [
 		enlace: './pages/detallePelicula.html',
 	},
 	{
-		img: '../img/p-2.png',
+		img: '../img/p-2.jpg',
 		fecha: 2014,
 		descripcion:
-			'Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.',
+			'Wade Wilson, tras ser sometido a un cruel experimento científico, adquiere poderes especiales que le convierten en Deadpool. Armado con sus nuevas habilidades y un retorcido sentido del humor tratará de dar caza al hombre que casi destruye su vida.',
 		directores: ['George Boone'],
-		categoria: ['Drama', 'Romance'],
+		categoria: ['Drama', 'Acción'],
 
 		rating: 7.7,
 
-		titulo: 'Fault in our stars',
+		titulo: 'Deadpool',
 
 		enlace: './pages/detallePelicula2.html',
 	},
@@ -39,7 +39,7 @@ const estrenos = [
 
 		titulo: 'Titanic',
 
-		enlace: './pages/detallePelicula2.html',
+		enlace: './pages/detallePelicula3.html',
 	},
 	{
 		img: '../img/p-4.png',
@@ -53,7 +53,7 @@ const estrenos = [
 
 		titulo: 'Blood Diamond',
 
-		enlace: './pages/detallePelicula2.html',
+		enlace: './pages/detallePelicula4.html',
 	},
 	{
 		img: '../img/p-5.png',
@@ -67,7 +67,7 @@ const estrenos = [
 
 		titulo: 'Acrimony',
 
-		enlace: './pages/detallePelicula2.html',
+		enlace: './pages/detallePelicula5.html',
 	},
 	{
 		img: '../img/p-6.jpg',
@@ -81,7 +81,7 @@ const estrenos = [
 
 		titulo: 'The Social Network',
 
-		enlace: './pages/detallePelicula2.html',
+		enlace: './pages/detallePelicula6.html',
 	},
 ];
 
@@ -130,7 +130,7 @@ function cargarPeliculas(peliculas) {
 				<div class="category-rating">
 
 					<div class="category">
-					 	<a href="#">Torror</a>,<a href="#">Misterio</a>,<a href="#"
+					 	<a href="#">Terror</a>,<a href="#">Misterio</a>,<a href="#"
 							>Thiller</a
 						> 
 						

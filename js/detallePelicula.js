@@ -41,7 +41,7 @@
           <div class="botones-comentario">
               <button type="" class="boton-puntuar">
                   <i class="fas fa-thumbs-up" id="mg"></i>
-                  45
+                  0
               </button>
               
           </div>
