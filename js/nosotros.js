@@ -1,7 +1,7 @@
 /* funcion busqueda */
-const buscarButton = document.getElementById('buscarButton');
+const buscarButtondet = document.getElementById('buscarButtondet');
 
-buscarButton.addEventListener('click', buscarPeli);
+buscarButtondet.addEventListener('click', buscarPeli);
 
 let peliculastorage = JSON.parse(localStorage.getItem('peliculas'));
 
@@ -31,7 +31,7 @@ function buscarPeli(e) {
 			cancelButtonText: 'Volver',
 		}).then((result) => {
 			if (result.isConfirmed) {
-				window.location.href = '../pages/error4042.html';
+				window.location.href = '../pages/error404.html';
 			}
 		});
 	} else {
@@ -43,13 +43,3 @@ function buscarPeli(e) {
 		return;
 	}
 }
-
-document.getElementById('recuperarForm').addEventListener('submit', function (event) {
-	// Evitar que el formulario se envíe automáticamente
-	event.preventDefault();
-
-	// Aquí puedes realizar cualquier acción adicional antes de la redirección, si es necesario
-
-	// Redirigir al usuario a la página deseada
-	window.location.href = '../pages/error404.html';
-});
