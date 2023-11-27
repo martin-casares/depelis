@@ -1,7 +1,7 @@
 const estrenos = [
 	{
 		img: '../img/p-1.png',
-		fecha: 2017,
+		fecha: 2012,
 		descripcion:
 			'After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies.',
 		directores: ['Anthony Russo', 'Joe Russo'],
@@ -11,10 +11,10 @@ const estrenos = [
 
 		titulo: 'Avengers: End Game',
 
-		enlace: '../pages/detallePelicula.html',
+		enlace: './pages/detallePelicula.html',
 	},
 	{
-		img: '../img/p-2.jpg',
+		img: '../img/p-2.png',
 		fecha: 2014,
 		descripcion:
 			'Two teenage cancer patients begin a life-affirming journey to visit a reclusive author in Amsterdam.',
@@ -24,9 +24,11 @@ const estrenos = [
 		rating: 7.7,
 
 		titulo: 'Fault in our stars',
+
+		enlace: './pages/detallePelicula2.html',
 	},
 	{
-		img: '../img/p-3.jpg',
+		img: '../img/p-3.png',
 		fecha: 1997,
 		descripcion:
 			'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic',
@@ -36,9 +38,11 @@ const estrenos = [
 		rating: 7.8,
 
 		titulo: 'Titanic',
+
+		enlace: './pages/detallePelicula2.html',
 	},
 	{
-		img: '../img/p-4.jpg',
+		img: '../img/p-4.png',
 		fecha: 2006,
 		descripcion:
 			'A fisherman, a smuggler, and a syndicate of businessmen match wits over the possession of a priceless diamond.',
@@ -48,9 +52,11 @@ const estrenos = [
 		rating: 8,
 
 		titulo: 'Blood Diamond',
+
+		enlace: './pages/detallePelicula2.html',
 	},
 	{
-		img: '../img/p-5.jpg',
+		img: '../img/p-5.png',
 		fecha: 2018,
 		descripcion:
 			'A faithful wife, tired of standing by her devious husband, is enraged when it becomes clear she has been betrayed.',
@@ -60,6 +66,8 @@ const estrenos = [
 		rating: 5.8,
 
 		titulo: 'Acrimony',
+
+		enlace: './pages/detallePelicula2.html',
 	},
 	{
 		img: '../img/p-6.jpg',
@@ -72,6 +80,8 @@ const estrenos = [
 		rating: 7.7,
 
 		titulo: 'The Social Network',
+
+		enlace: './pages/detallePelicula2.html',
 	},
 ];
 
@@ -97,13 +107,13 @@ function cargarPeliculas(peliculas) {
 		div.classList.add('swiper-slide');
 		div2.classList.add('main-slider-box');
 		div2.innerHTML = `
-			<a href="#" class="main-slider-overlay">
+			<a href="${pelicula.enlace}" class="main-slider-overlay">
 				<i class="fas fa-play"></i>
 			</a>
 		`;
 		div3.classList.add('main-slider-img');
 		div3.innerHTML = `
-			<a href="../pages/detallePelicula.html"><img class="img-fluid" src="${pelicula.img}" alt="${pelicula.titulo}"/> </a>
+			<a href="../pages/detallePelicula.html"> <img class="img-fluid" src="${pelicula.img}" alt="${pelicula.titulo}"/> </a>
 		
 		
 			<div class="main-slider-text">
